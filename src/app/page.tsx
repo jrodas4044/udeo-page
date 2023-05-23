@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
           <header id="home-header" className="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
-          <div className="h-screen bg-opacity-75 bg-black flex items-center justify-center" styleName="background:rgba(0,0,0,0.5);">
+          <div className="h-screen bg-opacity-75 bg-black flex items-center justify-center">
             <div className="mx-2 text-center">
               <h1 className="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl">
                 <span className="text-white">Universidad</span> De Occidente
