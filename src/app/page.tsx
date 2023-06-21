@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       <div className='flex w-full items-center  justify-center mb-24'>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Hj8skiBG2KU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Hj8skiBG2KU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
      </div>
     </div>
   )
