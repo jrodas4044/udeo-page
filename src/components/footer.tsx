@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Footer() {
     return (
         <div>
-            <footer className="bg-white text-gray-900 flex justify-between items-center  sm:flex-col lg:flex-row mt-6">
+            <footer className="bg-white text-gray-900 flex justify-between items-center  sm:flex-col lg:flex-row mt-6 border-t border-yellow-400 border-t-4">
             <div className="w-1/3 p-6">
                 <p>
                 La Universidad de Occidente basa el núcleo de su filosofía en el respeto y observancia de los derechos y libertades de cada individuo. Nuestros mentores son Mises y Hayek.
