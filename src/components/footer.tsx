@@ -3,13 +3,13 @@ import Image from "next/image"
 export default function Footer() {
     return (
         <div>
-            <footer className="bg-white text-gray-900 flex justify-between items-center  sm:flex-col lg:flex-row mt-6 border-t border-yellow-400 border-t-4">
-            <div className="w-1/3 p-6">
+            <footer className="bg-white text-gray-900 flex justify-between items-center  flex-col md:flex-row border-t border-yellow-400 border-t-4">
+            <div className="md:w-1/3 p-6">
                 <p>
                 La Universidad de Occidente basa el núcleo de su filosofía en el respeto y observancia de los derechos y libertades de cada individuo. Nuestros mentores son Mises y Hayek.
                 </p>
             </div>
-            <div className="w-1/3 p-6">
+            <div className="md:w-1/3 p-6  my-6 border-l border-yellow-400">
                 <div className="my-2">
                     <strong>Email:</strong> infirmacion@udeoberistain.edu.gt
                 </div>
@@ -20,7 +20,7 @@ export default function Footer() {
                 2ª Calle 31-38 Oficinas Interior del Colegio Montecarmelo Calzada Doroteo Guamuch Flores Guatemala, Guatemala.
                 </div>
             </div>
-            <div className="w-1/3 p-6 flex items-center">
+            <div className="md:w-1/3 p-6 flex items-center my-6 border-l border-yellow-400">
                 <div>
                     <a href='https://www.facebook.com/UniversidadDeOccidenteExtensionAntonioBeristain/'>
                         <Image 

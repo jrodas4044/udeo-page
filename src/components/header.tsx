@@ -23,7 +23,7 @@ export default function Header() {
                         </Link>
                     </li>
                     <li className="border-l  border-0  border-l-red-900 py-2 px-4">
-                        <Link href='/' className="font-bold hover:text-red-900">
+                        <Link href='#offerts' className="font-bold hover:text-red-900">
                             Carreras
                         </Link>
                     </li>

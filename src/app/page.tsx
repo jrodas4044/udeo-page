@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div>
-          <header id="home-header" className="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+          <header id="home-header" className="bg-center bg-fixed bg-no-repeat bg-center bg-cover relative">
           <div className="h-screen bg-opacity-75 bg-black flex items-center justify-center">
             <div className="mx-2 text-center">
               <h1 className="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl">
@@ -16,16 +16,16 @@ export default function Home() {
                 <div className="inline-flex">
                   <a
                     href='https://wa.link/o7fyaa' 
-                    className="p-2 my-5 mx-2 bg-indigo-700 hover:bg-indigo-800 font-bold text-white rounded border-2 border-transparent hover:border-indigo-800 shadow-md transition duration-500 md:text-xl">
+                    className="p-2 my-5 mx-2 bg-yellow-400 hover:bg-yellow-800 hover:text-white font-bold text-gray-700 rounded border-2 border-transparent hover:border-yellow-400 shadow-md transition duration-500 md:text-xl">
                     Contactar  
                   </a>           
                 </div>
               </div>
           </div>
       </header>
-      <div className='container m-auto p-4'>
-         <div className='my-6'>
-          <h1 className='text-3xl text-center font-bold text-gray-700 border-b border-gray-200 pb-4'>
+      <div className='container m-auto mb-8 p-4'>
+         <div className='mt-6 mb-8'>
+          <h1 className='text-3xl text-center font-bold text-gray-700 border-b border-yellow-400 pb-4'>
             Oferta Académica
           </h1>
          </div>
@@ -56,7 +56,7 @@ export default function Home() {
 
       <div className='container items-center justify-center py-24 px-8'>
         <div>
-          <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">Facultad de ciencias Forenses <br /> e Investigación Criminal</span></h1>
+          <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">Facultad de Ciencias Forenses <br /> e Investigación Criminal</span></h1>
           <p className="text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-700">La  Facultad de ciencias forenses e investigación criminal está comprometida con la sociedad en darle  a nuestros estudiantes una educación integral de la más alta calidad tanto a nivel pregrado, posgrado, maestría y doctorado, basada en valores cristianos, éticos y la filosofía de la escuela austriaca de economía, creando espacios que estimulen la formación, el debate, la crítica, el estudio científico, aportando los conocimientos de las diferentes ciencias que contribuyan  a la prevención de hechos que transgredan la paz del ser humano.</p>
         </div>
       </div>
