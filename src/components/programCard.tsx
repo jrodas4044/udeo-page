@@ -12,7 +12,7 @@ export default function ProgramCard({name, url, imageUrl, classes}: Program) {
     return (
         <div className='h-full'>
             <div
-                className="max-w-sm h-full bg-white border border-gray-200 rounded-lg shadow bg-gray-800 border-gray-700 hover:bg-yellow-500 hover:text-gray-700 hover:shadow-xl m-auto"
+                className="max-w-sm h-full border rounded-lg shadow bg-gray-800 border-gray-700 hover:bg-yellow-500 hover:text-gray-700 hover:shadow-xl m-auto"
             >
                 <Link href={url}>
                     <Image 
