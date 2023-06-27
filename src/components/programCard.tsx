@@ -24,7 +24,7 @@ export default function ProgramCard({name, url, imageUrl, classes}: Program) {
                 </Link>
                 <div className="p-5">
                     <Link href={url}>
-                        <h2 className="mb-2  text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h2 className="mb-2  text-center text-2xl font-bold tracking-tight text-white">
                             {name}
                         </h2>
                     </Link>

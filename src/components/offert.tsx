@@ -10,7 +10,7 @@ export default function Offerts() {
         >
             <ProgramCard 
                 name="Técnico Universitario Auditor Forense en Investigaciones Criminales"
-                url="https://auditorforense.pulse.is/"
+                url="/tecnico-auditor-forense"
                 imageUrl="/taf.jpg"
             />
 
@@ -23,25 +23,25 @@ export default function Offerts() {
             <ProgramCard 
                 name="Maestría en Investigación Criminal"
                 url="#"
-                imageUrl="/lics.jpg"
+                imageUrl="/maestria.jpg"
             />
 
             <ProgramCard 
                 name="Doctorado en Justicia Criminal y Seguridad"
                 url="#"
-                imageUrl="/lics.jpg"
+                imageUrl="/doctorado.jpg"
             />
 
             <ProgramCard 
                 name="Licenciatura en Ciencias Policiales"
                 url="#"
-                imageUrl="/lics.jpg"
+                imageUrl="/policia.jpg"
             />
 
             <ProgramCard 
                 name="Diplomados"
                 url="#"
-                imageUrl="/lics.jpg"
+                imageUrl="/dip.jpg"
             />
         </div>
     )
