@@ -11,7 +11,7 @@ export default function Footer() {
             </div>
             <div className="md:w-1/3 p-6  my-6 border-l border-yellow-400">
                 <div className="my-2">
-                    <strong>Email:</strong> infirmacion@udeoberistain.edu.gt
+                    <strong>Email:</strong> informacion@udeoberistain.edu.gt
                 </div>
                 <div className="my-2">
                     <strong>PBX:</strong> +(502) 2458-4550

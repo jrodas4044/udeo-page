@@ -23,16 +23,20 @@ export default function Home() {
               </div>
           </div>
       </header>
-      <div className='container m-auto mb-8 p-4'>
-         <div className='mt-6 mb-8'>
-          <h1 className='text-3xl text-center font-bold text-gray-700 border-b border-yellow-400 pb-4'>
-            Oferta Académica
-          </h1>
-         </div>
-        <Offerts/>
+
+
+      <div className='container items-center justify-center py-24 px-8'>
+        <div>
+          <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">Facultad de Ciencias Forenses <br /> e Investigación Criminal</span></h1>
+          <p className="text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-700">La  Facultad de ciencias forenses e investigación criminal está comprometida con la sociedad en darle  a nuestros estudiantes una educación integral de la más alta calidad tanto a nivel pregrado, posgrado, maestría y doctorado, basada en valores cristianos, éticos y la filosofía de la escuela austriaca de economía, creando espacios que estimulen la formación, el debate, la crítica, el estudio científico, aportando los conocimientos de las diferentes ciencias que contribuyan  a la prevención de hechos que transgredan la paz del ser humano.</p>
+        </div>
       </div>
 
-      <div className='w-full flex flex-col  md:flex-row items-center justify-center m-auto p-4 bg-yellow-400'>
+      <div className='flex w-full items-center  justify-center mb-24'>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Hj8skiBG2KU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+     </div>
+
+     <div className='w-full flex flex-col  md:flex-row items-center justify-center m-auto p-4 bg-yellow-400'>
         <div className='flex-1 p-6'>
           <h1 className='text-3xl text-center font-bold text-gray-700 border-b border-gray-200 pb-4'>
             ¿Por qué estudiar en <br /> UDEO ext. Antonio Beristain?
@@ -54,16 +58,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='container items-center justify-center py-24 px-8'>
-        <div>
-          <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">Facultad de Ciencias Forenses <br /> e Investigación Criminal</span></h1>
-          <p className="text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-700">La  Facultad de ciencias forenses e investigación criminal está comprometida con la sociedad en darle  a nuestros estudiantes una educación integral de la más alta calidad tanto a nivel pregrado, posgrado, maestría y doctorado, basada en valores cristianos, éticos y la filosofía de la escuela austriaca de economía, creando espacios que estimulen la formación, el debate, la crítica, el estudio científico, aportando los conocimientos de las diferentes ciencias que contribuyan  a la prevención de hechos que transgredan la paz del ser humano.</p>
-        </div>
+      <div className='container m-auto mb-8 p-4'>
+         <div className='mt-6 mb-8'>
+          <h1 className='text-3xl text-center font-bold text-gray-700 border-b border-yellow-400 pb-4'>
+            Oferta Académica
+          </h1>
+         </div>
+        <Offerts/>
       </div>
-
-      <div className='flex w-full items-center  justify-center mb-24'>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Hj8skiBG2KU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-     </div>
     </div>
   )
 }
