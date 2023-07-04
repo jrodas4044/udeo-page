@@ -1,29 +1,52 @@
+'use client'
+
 import Offerts from '@/components/offert'
 import Image from 'next/image'
+import { Carousel } from 'flowbite-react';
 
 export default function Home() {
   return (
     <div>
-          <header id="home-header" className="bg-center bg-fixed bg-no-repeat bg-center bg-cover relative">
-          <div className="h-screen bg-opacity-75 bg-black flex items-center justify-center">
-            <div className="mx-2 text-center">
-              <h1 className="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl">
-                <span className="text-white">Universidad</span> De Occidente
-                </h1>
-                <h2 className="text-gray-200 font-extrabold text-3xl xs:text-4xl md:text-5xl leading-tight">
-                  Extensión Antonio Beristain
-                </h2>
-                <div className="inline-flex">
-                  <a
-                    href='https://wa.link/o7fyaa' 
-                    className="p-2 my-5 mx-2 bg-yellow-400 hover:bg-yellow-800 hover:text-white font-bold text-gray-700 rounded border-2 border-transparent hover:border-yellow-400 shadow-md transition duration-500 md:text-xl">
-                    Contactar  
-                  </a>           
-                </div>
-              </div>
-          </div>
-      </header>
 
+<Carousel
+ className='w-full hidden md:block'
+ style={{height: '500px' }}
+>
+      <Image
+        alt="..."
+        width={1400}
+        height={500}
+        src="/hero2.png"
+      />
+
+      <Image
+        alt="..."
+        width={1400}
+        height={500}
+        src="/hero3.png"
+      />
+
+</Carousel>
+
+<Carousel
+ className='w-full sm:hidden'
+ style={{height: '150px' }}
+>
+      <Image
+        alt="..."
+        width={1400}
+        height={500}
+        src="/hero2.png"
+      />
+
+      <Image
+        alt="..."
+        width={1400}
+        height={500}
+        src="/hero3.png"
+      />
+
+</Carousel>
 
       <div className='container items-center justify-center py-24 px-8'>
         <div>
