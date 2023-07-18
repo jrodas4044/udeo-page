@@ -75,7 +75,7 @@ export default function Home() {
             src='/1.png'
             width={600}
             height={600}
-            alt='UDEO BERISTAIN'
+            alt='UDEO  Ext .BERISTAIN'
             className="h-full"
           />
         </div>
