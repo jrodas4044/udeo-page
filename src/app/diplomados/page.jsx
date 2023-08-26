@@ -59,13 +59,15 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="container m-auto  py-8">
-        <h2 className="text-gray-900 text-2xl font-bold text-center">
-          Solicitar más información
-        </h2>
-        <hr />
-        <div className="mt-6">
-          <ContactForm></ContactForm>
+      <div className="w-full bg-yellow-200 mt-6">
+        <div className="container m-auto  py-8">
+          <h2 className="text-gray-900 text-2xl font-bold text-center">
+            Solicitar más información
+          </h2>
+          <hr />
+          <div className="mt-6">
+            <ContactForm></ContactForm>
+          </div>
         </div>
       </div>
     </div>

@@ -69,7 +69,7 @@ export default function ContactForm() {
           </div>
         </div>
         <div className="flex justify-center mt-6">
-          <button className="bg-yellow-300 hover:shadow-lg hover:bg-blue-900 hover:text-white py-2 px-2 font-bold flex items-center">
+          <button className="bg-gray-800 hover:shadow-lg hover:bg-blue-900 text-yellow-200 hover:text-white py-2 px-4 font-bold flex items-center shadow-xl rounded-full">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -3,6 +3,7 @@
 import Offerts from "@/components/offert";
 import Image from "next/image";
 import { Carousel } from "flowbite-react";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -13,13 +14,7 @@ export default function Home() {
         <Image alt="..." width={1400} height={500} src="/hero3.png" />
       </Carousel>
 
-      <Carousel className="w-full sm:hidden" style={{ height: "150px" }}>
-        <Image alt="..." width={1400} height={500} src="/hero2.png" />
-
-        <Image alt="..." width={1400} height={500} src="/hero3.png" />
-      </Carousel>
-
-      <div className="container  m-auto flex items-center justify-center py-24 px-8">
+      <div className="container  m-auto flex items-center justify-center pt-24 pb-8 px-8">
         <div>
           <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">
@@ -40,14 +35,45 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex w-full items-center  justify-center mb-24">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Hj8skiBG2KU"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        ></iframe>
+      <div className="  mb-12">
+        <div className="container m-auto grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+          <div className="bg-white p-4 rounded-lg shadow">
+            <Image
+              src="/fotos-portada/1.jpg"
+              alt="Imagen 1"
+              className="w-full"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow">
+            <Image
+              src="/fotos-portada/2.jpg"
+              alt="Imagen 2"
+              className="w-full"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow">
+            <Image
+              src="/fotos-portada/3.jpg"
+              alt="Imagen 3"
+              className="w-full"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow">
+            <Image
+              src="/fotos-portada/4.jpg"
+              alt="Imagen 4"
+              className="w-full"
+              width={250}
+              height={250}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="w-full flex flex-col  md:flex-row items-center justify-center m-auto p-4 bg-yellow-200">
@@ -88,6 +114,18 @@ export default function Home() {
           </h1>
         </div>
         <Offerts />
+      </div>
+
+      <div className="w-full bg-yellow-200">
+        <div className="container m-auto  py-8">
+          <h2 className="text-gray-900 text-2xl font-bold text-center">
+            Solicitar más información
+          </h2>
+          <hr />
+          <div className="mt-6">
+            <ContactForm></ContactForm>
+          </div>
+        </div>
       </div>
     </div>
   );

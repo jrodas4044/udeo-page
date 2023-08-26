@@ -17,6 +17,19 @@ export default function Page() {
               <br /> y Ciencias Forenses
             </span>
           </h1>
+
+          <div className="w-full flex  items-center justify-center mb-8">
+            <div>
+              <a
+                href="https://drive.google.com/file/d/1B_5_M89Y_0EBERUUIiup55Kf2xEk7vNK/view"
+                target="_blank"
+                className="font-bold px-4 py-2 text-lg bg-gray-800 text-yellow-200  hover:bg-yellow-200 hover:text-gray-800 rounded-full"
+              >
+                Descargar Folleto
+              </a>
+            </div>
+          </div>
+
           <div className="text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-700 text-justify">
             <p class="mb-4">
               El Doctorado en Justicia Criminal y Ciencias Forenses es un
@@ -297,41 +310,40 @@ export default function Page() {
             justicia, la equidad y la violencia
           </p>
           <h2 class="text-2xl font-semibold mb-2">Costos del programa:</h2>
-          <p>
-            <ul class="list-disc ml-4">
-              <li class="mb-2">
-                INSCRIPCIÓN POR CADA MÓDULO (18): <strong>Q500.00</strong> -
-                Incluye libro físico del docente internacional tutor del módulo,
-                guía programática metodológica y uso de plataforma.
-              </li>
-              <li class="mb-2">
-                MENSUALIDADES (24): <strong>Q2,000.00</strong>
-              </li>
-              <li class="mb-2">
-                INSCRIPCIÓN DE ANTEPROYECTO DE TESIS: <strong>Q1,000.00</strong>{" "}
-                - Revisión y desarrollo de propuesta metodológica cuatro meses
-                posterior a la inscripción.
-              </li>
-              <li class="mb-2">
-                DEFENSA DE TESIS DOCTORAL: <strong>Q3,600.00</strong> - Proceso
-                final.
-              </li>
-              <li class="mb-2">
-                TRÁMITE DE GRADUACIÓN: <strong>Q2,000.00</strong> - Proceso
-                final.
-              </li>
-            </ul>
-          </p>
+          <ul class="list-disc ml-4">
+            <li class="mb-2">
+              INSCRIPCIÓN POR CADA MÓDULO (18): <strong>Q500.00</strong> -
+              Incluye libro físico del docente internacional tutor del módulo,
+              guía programática metodológica y uso de plataforma.
+            </li>
+            <li class="mb-2">
+              MENSUALIDADES (24): <strong>Q2,000.00</strong>
+            </li>
+            <li class="mb-2">
+              INSCRIPCIÓN DE ANTEPROYECTO DE TESIS: <strong>Q1,000.00</strong> -
+              Revisión y desarrollo de propuesta metodológica cuatro meses
+              posterior a la inscripción.
+            </li>
+            <li class="mb-2">
+              DEFENSA DE TESIS DOCTORAL: <strong>Q3,600.00</strong> - Proceso
+              final.
+            </li>
+            <li class="mb-2">
+              TRÁMITE DE GRADUACIÓN: <strong>Q2,000.00</strong> - Proceso final.
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div className="container m-auto  py-8">
-        <h2 className="text-gray-900 text-2xl font-bold text-center">
-          Solicitar más información
-        </h2>
-        <hr />
-        <div className="mt-6">
-          <ContactForm></ContactForm>
+      <div className="w-full bg-yellow-200 mt-6">
+        <div className="container m-auto  py-8">
+          <h2 className="text-gray-900 text-2xl font-bold text-center">
+            Solicitar más información
+          </h2>
+          <hr />
+          <div className="mt-6">
+            <ContactForm></ContactForm>
+          </div>
         </div>
       </div>
     </div>
