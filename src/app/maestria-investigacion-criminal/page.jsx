@@ -11,18 +11,85 @@ export default function Page() {
     <div>
       <div className="container m-auto items-center justify-center pt-24  px-8 pb-2">
         <div>
-          <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
+          <h1 className="mb-8 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">
-              Técnico Auditor Forense <br /> en Investigaciones Criminales
+              Maestría en <br /> Investigación Criminal
             </span>
           </h1>
-          <p className="text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-700 text-justify">
-            El técnico auditor forense e investigador criminal, tendrá la
-            capacidad de hacer análisis concretos sobre la criminalidad,
-            aprovechará los recursos tecnológicos para realizar auditorías de
-            evidencia circunstancial que permita el esclarecimiento de hechos
-            que atenten contra la paz social.
-          </p>
+          <div className="text-lg mt-4 font-normal text-gray-700 lg:text-xl dark:text-gray-700 text-justify">
+            <p className="mb-4">
+              Sumérgete en el mundo de la investigación criminal avanzada con
+              nuestra Maestría en Investigación Criminal. Diseñada para aquellos
+              que buscan convertirse en líderes en el campo de la justicia y la
+              seguridad, esta maestría te brindará las habilidades, el
+              conocimiento y la perspicacia necesarios para abordar los desafíos
+              más apremiantes de nuestra sociedad.
+            </p>
+            <h3 class="text-2xl font-bold mb-4">Perfil de Egreso</h3>
+            <p class="mb-4">
+              Después de completar la Maestría en Investigación Criminal,
+              estarás listo para establecer conexiones valiosas con
+              instituciones en el ámbito de la justicia, así como para
+              embarcarte en una carrera independiente como asesor privado o
+              consultor especializado. Tus conocimientos en estrategias,
+              inteligencia y prevención delictiva serán altamente demandados en
+              una variedad de contextos.
+            </p>
+            <p class="mb-4">
+              Tus habilidades abarcarán una amplia gama de áreas clave:
+            </p>
+            <ul class="list-disc pl-8 mb-4">
+              <li class="mb-2">
+                Análisis e Interpretación de Indicios: Serás capaz de analizar y
+                dar sentido a las pistas y pruebas, desentrañando la verdad
+                detrás de los incidentes.
+              </li>
+              <li class="mb-2">
+                Reconstrucción de Hechos: Podrás reconstruir meticulosamente los
+                eventos pasados, proporcionando claridad y comprensión en
+                situaciones complejas.
+              </li>
+              <li class="mb-2">
+                Investigaciones de Campo en Investigación Criminal: Estarás
+                equipado para llevar a cabo investigaciones en el terreno,
+                recopilando información crucial para resolver casos.
+              </li>
+              <li class="mb-2">
+                Diseño de Programas de Prevención Criminal: Contribuirás a la
+                sociedad diseñando programas efectivos que reduzcan el riesgo de
+                delitos y promuevan la seguridad.
+              </li>
+              <li class="mb-2">
+                Diseño de Estrategias de Seguridad: Desarrollarás estrategias
+                sólidas para garantizar la seguridad en diferentes entornos.
+              </li>
+              <li class="mb-2">
+                Investigación en Delitos Bancarios: Serás un experto en
+                investigar y abordar delitos financieros y bancarios.
+              </li>
+              <li class="mb-2">
+                Acciones de Seguridad e Integridad en Investigación Criminal:
+                Garantizarás que las investigaciones se realicen con integridad
+                y en un entorno seguro.
+              </li>
+              <li class="mb-2">
+                Asesoría en Servicios de Inteligencia: Tu experiencia te
+                permitirá asesorar en el ámbito de la inteligencia,
+                contribuyendo a la toma de decisiones fundamentadas.
+              </li>
+              <li class="mb-2">
+                Planificación y Operación de Servicios de Inteligencia: Serás
+                capaz de planificar y dirigir operaciones de inteligencia con
+                eficacia.
+              </li>
+            </ul>
+
+            <p className="text-center text-2xl text-bold  my-8">
+              Prepárate para tener un impacto significativo en la justicia, la
+              seguridad y la prevención delictiva en una variedad de roles y
+              escenarios profesionales.
+            </p>
+          </div>
         </div>
       </div>
 

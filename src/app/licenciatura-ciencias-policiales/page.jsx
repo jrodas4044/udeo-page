@@ -11,18 +11,53 @@ export default function Page() {
     <div>
       <div className="container m-auto items-center justify-center pt-24  px-8 pb-2">
         <div>
-          <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
+          <h1 className="mb-8 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">
-              Técnico Auditor Forense <br /> en Investigaciones Criminales
+              Licenciatura en <br /> Ciencias Policiales
             </span>
           </h1>
-          <p className="text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-700 text-justify">
-            El técnico auditor forense e investigador criminal, tendrá la
-            capacidad de hacer análisis concretos sobre la criminalidad,
-            aprovechará los recursos tecnológicos para realizar auditorías de
-            evidencia circunstancial que permita el esclarecimiento de hechos
-            que atenten contra la paz social.
-          </p>
+          <div className="text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-700 text-justify">
+            <p class="mb-4">
+              Prepárate para sumergirte en el apasionante mundo de la aplicación
+              de la ley y la seguridad ciudadana a través de nuestra
+              Licenciatura en Ciencias Policiales. Este programa integral te
+              brindará la oportunidad de adquirir una educación excepcional y
+              formarte como un profesional altamente capacitado y ético en el
+              campo policial.
+            </p>
+            <p class="mb-4">
+              Nuestra licenciatura ofrece un equilibrio único entre teoría y
+              práctica, lo que te permitirá desarrollar un profundo
+              entendimiento de los principios legales, la ética y las tácticas
+              necesarias para proteger y servir a la comunidad. Desde técnicas
+              avanzadas de investigación hasta la gestión de crisis, obtendrás
+              habilidades prácticas que te empoderarán para enfrentar los
+              desafíos cambiantes de la seguridad pública.
+            </p>
+            <p class="mb-4">
+              Nuestro equipo de docentes experimentados y profesionales de la
+              aplicación de la ley te guiará a lo largo de tu trayecto
+              educativo, proporcionándote conocimientos actualizados y
+              perspicacia práctica. Además, tendrás la oportunidad de participar
+              en ejercicios de simulación y casos de estudio en tiempo real,
+              permitiéndote aplicar tus conocimientos en situaciones reales.
+            </p>
+            <p class="mb-4">
+              Si eres una persona apasionada por el servicio comunitario, la
+              justicia y la seguridad, y deseas desafíos emocionantes y
+              gratificantes en tu carrera, nuestra Licenciatura en Ciencias
+              Policiales es tu puerta de entrada a una profesión dinámica y
+              valiosa. Únete a nosotros para explorar el camino hacia una
+              carrera en la que marcarás una diferencia tangible en la sociedad
+              y mantendrás la paz y el orden en nuestra comunidad.
+            </p>
+            <p class="text-center bg-blue-500 text-white p-2 rounded cursor-pointer hover:bg-blue-600">
+              <a href="#contacto">
+                ¡Inscríbete hoy y forja un futuro prometedor en la aplicación de
+                la ley!
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 

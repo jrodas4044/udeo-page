@@ -11,17 +11,32 @@ export default function Page() {
     <div>
       <div className="container m-auto items-center justify-center pt-24  px-8 pb-2">
         <div>
-          <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
+          <h1 className="mb-8 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">
-              Técnico Auditor Forense <br /> en Investigaciones Criminales
+              Licenciatura en <br />
+              Investigación Criminal y Seguridad
             </span>
           </h1>
           <p className="text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-700 text-justify">
-            El técnico auditor forense e investigador criminal, tendrá la
-            capacidad de hacer análisis concretos sobre la criminalidad,
-            aprovechará los recursos tecnológicos para realizar auditorías de
-            evidencia circunstancial que permita el esclarecimiento de hechos
-            que atenten contra la paz social.
+            La Licenciatura en Investigación Criminal y Seguridad te brindará
+            las habilidades esenciales para enfrentar los desafíos en el ámbito
+            de la justicia y la seguridad. Los graduados estarán equipados para
+            llevar a cabo análisis precisos de la criminalidad, utilizando
+            recursos tecnológicos para auditar la evidencia circunstancial y
+            esclarecer eventos que amenacen la paz social.
+          </p>
+
+          <p className="text-lg font-normal mt-4 text-gray-700 lg:text-xl dark:text-gray-700 text-justify">
+            Nuestro programa fomenta la adquisición continua de conocimientos en
+            investigación criminal, promoviendo la responsabilidad y la ética en
+            cada paso. Los estudiantes desarrollarán la capacidad de aplicar
+            rigurosamente metodologías científicas en sus investigaciones,
+            impulsados por un espíritu de curiosidad y creatividad. La
+            planificación, la organización y el trabajo en equipo serán ejes
+            fundamentales de tu formación, respaldados por una actitud crítica y
+            un fuerte sentido de servicio a la comunidad. Prepárate para
+            convertirte en un profesional capaz de marcar la diferencia en la
+            seguridad y el orden social.
           </p>
         </div>
       </div>
