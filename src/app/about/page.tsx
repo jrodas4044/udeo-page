@@ -42,7 +42,7 @@ export default function Page() {
         <div className="container m-auto p-8  grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-white p-4 rounded-xl text-justify shadow-lg">
             <h2 className="text-lg font-semibold mb-4">Misión</h2>
-            <p claclassNamess="text-gray-700">
+            <p className="text-gray-700">
               La Facultad de ciencias forenses e investigación criminal está
               comprometida con la sociedad en darle a nuestros estudiantes una
               educación integral de la más alta calidad tanto a nivel pregrado,
