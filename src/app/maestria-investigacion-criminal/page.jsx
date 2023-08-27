@@ -179,13 +179,41 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="container m-auto  py-8">
-        <h2 className="text-gray-900 text-2xl font-bold text-center">
-          Solicitar más información
-        </h2>
-        <hr />
-        <div className="mt-6">
-          <ContactForm></ContactForm>
+      <div className="container m-auto mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white  rounded-lg shadow">
+            <div class="embed-responsive">
+              <iframe
+                className="w-full"
+                src="https://www.youtube.com/embed/fa9kZibb8nM"
+                allowfullscreen
+                height={350}
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="bg-white  rounded-lg shadow">
+            <div class="embed-responsive">
+              <iframe
+                className="w-full"
+                src="https://www.youtube.com/embed/AS5nNBHOk3U"
+                allowfullscreen
+                height={350}
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-yellow-200 mt-8">
+        <div className="container m-auto  py-8">
+          <h2 className="text-gray-900 text-2xl font-bold text-center">
+            Solicitar más información
+          </h2>
+          <hr />
+          <div className="mt-6">
+            <ContactForm></ContactForm>
+          </div>
         </div>
       </div>
     </div>

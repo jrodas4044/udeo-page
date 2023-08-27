@@ -70,6 +70,50 @@ export default function Page() {
         </div>
       </div>
 
+      <div className="container m-auto my-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="bg-white p-4 shadow-2xl">
+            <Image
+              src="/fotos-doctorado/1.jpg"
+              alt="Imagen 1"
+              className="w-full"
+              width={400}
+              height={400}
+            />
+          </div>
+
+          <div className="bg-white p-4 shadow-2xl">
+            <Image
+              src="/fotos-doctorado/2.jpg"
+              alt="Imagen 1"
+              className="w-full"
+              width={400}
+              height={400}
+            />
+          </div>
+
+          <div className="bg-white p-4 shadow-2xl">
+            <Image
+              src="/fotos-doctorado/3.jpg"
+              alt="Imagen 1"
+              className="w-full"
+              width={400}
+              height={400}
+            />
+          </div>
+
+          <div className="bg-white p-4 shadow-2xl">
+            <Image
+              src="/fotos-doctorado/4.jpg"
+              alt="Imagen 1"
+              className="w-full"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div>
+      </div>
+
       <div className="w-full bg-yellow-200 py-8 px-4 my-8">
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-4 m-auto">
           <div>

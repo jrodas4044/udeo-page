@@ -132,13 +132,56 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="container m-auto  py-8">
-        <h2 className="text-gray-900 text-2xl font-bold text-center">
-          Solicitar más información
-        </h2>
-        <hr />
-        <div className="mt-6">
-          <ContactForm></ContactForm>
+      <div className="  mb-2">
+        <div className="container m-auto grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+          <div className="bg-white p-4 rounded-lg shadow">
+            <Image
+              src="/fotos-policia/1.png"
+              alt="Imagen 1"
+              className="w-full"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow">
+            <Image
+              src="/fotos-policia/2.jpg"
+              alt="Imagen 2"
+              className="w-full"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow">
+            <Image
+              src="/fotos-policia/3.png"
+              alt="Imagen 3"
+              className="w-full"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow">
+            <Image
+              src="/fotos-policia/4.jpg"
+              alt="Imagen 4"
+              className="w-full"
+              width={250}
+              height={250}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-yellow-200">
+        <div className="container m-auto  py-8">
+          <h2 className="text-gray-900 text-2xl font-bold text-center">
+            Solicitar más información
+          </h2>
+          <hr />
+          <div className="mt-6">
+            <ContactForm></ContactForm>
+          </div>
         </div>
       </div>
     </div>
