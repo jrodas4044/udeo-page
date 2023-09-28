@@ -29,6 +29,14 @@ export default function Header() {
               Carreras
             </Link>
           </li>
+          <li className=" py-2 px-4">
+            <Link
+              href="http://54.157.166.65"
+              className="font-bold hover:text-white"
+            >
+              Carnet
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
