@@ -20,21 +20,11 @@ export default function Header() {
             </Link>
           </li>
           <li className=" py-2 px-4">
-            <Link href="/about" className="font-bold hover:text-white">
-              Acerca de
-            </Link>
-          </li>
-          <li className=" py-2 px-4">
-            <Link href="#offerts" className="font-bold hover:text-white">
-              Carreras
-            </Link>
-          </li>
-          <li className=" py-2 px-4">
             <Link
-              href="http://54.157.166.65"
+              href="https://main.d4n4d1u9wf5ut.amplifyapp.com"
               className="font-bold hover:text-white"
             >
-              Carnet
+              Asistencia
             </Link>
           </li>
         </ul>
