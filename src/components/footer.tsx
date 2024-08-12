@@ -17,7 +17,7 @@ export default function Footer() {
             <strong>Email:</strong> informacion@udeoberistain.edu.gt
           </div>
           <div className="my-2">
-            <strong>PBX:</strong> +(502) 2458-4550
+            <strong>PBX:</strong> +(502) 2458-4551
           </div>
           <div className="my-2">
             2ª Calle 31-38 Oficinas Interior del Colegio Montecarmelo Calzada
@@ -87,7 +87,7 @@ export default function Footer() {
       </footer>
       <div className="bg-gray-900 text-white p-4 text-center">
         Facultad de Ciencias Forenses e Investigación Criminal - Universidad de
-        Occidente - Extensión Antonio Beristain. Todos los derechos reservados.
+        Occidente - Extensión Antonio Beristain. Todos los derechos reservados. <span className="text-xs text-gray-200">Power By <a href="https://www.jonhathanrodas.com/" >JRL</a></span>
       </div>
     </div>
   );
