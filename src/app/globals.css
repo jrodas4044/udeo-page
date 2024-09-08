@@ -6,9 +6,9 @@ body {
   @apply bg-gray-100;
 }
 
-#home-header{
-background: url('/hero.png') no-repeat center center;
-background-size: cover;
+#home-header {
+  background: url("/hero.png") no-repeat center center;
+  background-size: cover;
 }
 
 @keyframes fadeInUp {
@@ -24,4 +24,53 @@ background-size: cover;
 
 .fadeInUp-animation {
   animation: 1.5s fadeInUp;
+}
+/*
+  HomeIntro
+*/
+
+.crime-tape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f8d71c;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.crime-tape::before,
+.crime-tape::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: repeating-linear-gradient(
+    45deg,
+    #f8d71c,
+    #f8d71c 10px,
+    #222 10px,
+    #222 20px
+  );
+}
+
+.crime-tape::before {
+  top: 0;
+}
+
+.crime-tape::after {
+  bottom: 0;
+}
+
+.crime-tape span {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }

@@ -1,10 +1,13 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Special_Elite } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import HubSpotScript from "@/components/HubSpotScript";
 
-const inter = Inter({ subsets: ["latin"] });
+const specialElite = Special_Elite({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Universidad De Occidente - Extensión Antonio Beristain",
@@ -18,13 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
-        <Header />
+      <body className={specialElite.className}>
         {children}
 
         <Footer />
         {/* Agrega el componente HubSpotScript */}
-        <HubSpotScript />
       </body>
     </html>
   );
