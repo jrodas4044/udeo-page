@@ -25,7 +25,7 @@ export default function RootLayout({
         {children}
 
         <Footer />
-        {/* Agrega el componente HubSpotScript */}
+        <HubSpotScript />
       </body>
     </html>
   );
