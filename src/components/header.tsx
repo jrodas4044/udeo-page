@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-gray-800 shadow-lx m-0 ">
+    <header className="bg-udeo-red shadow-lg m-0">
       <nav className="flex items-center justify-between p-4">
         <a href="/">
           <Image
@@ -13,7 +13,7 @@ export default function Header() {
             alt="UDEO BERISTAIN"
           />
         </a>
-        <ul className="flex space-x-4 text-yellow-200">
+        <ul className="flex space-x-4 text-white">
           <li className="py-2 px-4">
             <Link href="/" className="font-bold hover:text-white">
               Inicio

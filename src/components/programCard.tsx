@@ -11,13 +11,13 @@ type Program = {
 export default function ProgramCard({ name, url, imageUrl, classes }: Program) {
   return (
     <div className="h-full">
-      <div
-        className={`relative bg-white shadow-md p-3 rounded-lg transform ${
-          Math.random() > 0.5 ? "rotate-2" : "-rotate-2"
-        } transition-transform duration-300 hover:rotate-0 hover:scale-105`}
-      >
-        <div className="top-0 left-0 absolute bg-yellow-100 opacity-20 w-full h-full"></div>
-        <Link href={url}>
+      <Link href={url} className="block">
+        <div
+          className={`relative bg-white shadow-md p-3 rounded-lg transform ${
+            Math.random() > 0.5 ? "rotate-2" : "-rotate-2"
+          } transition-all duration-300 hover:rotate-0 hover:scale-105 hover:shadow-xl hover:shadow-udeo-red/10 cursor-pointer`}
+        >
+          <div className="top-0 left-0 absolute bg-yellow-100 opacity-20 w-full h-full"></div>
           <Image
             className="border-4 border-white w-full"
             src={imageUrl}
@@ -26,15 +26,16 @@ export default function ProgramCard({ name, url, imageUrl, classes }: Program) {
             height={200}
             layout="responsive"
           />
-        </Link>
-        <div className="p-4">
-          <Link href={url}>
+          <div className="p-4">
             <h2 className="font-bold text-center text-gray-800 text-xl tracking-tight">
               {name}
             </h2>
-          </Link>
+            <p className="text-center text-udeo-red text-sm mt-2 font-semibold hover:underline">
+              Ver programa →
+            </p>
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

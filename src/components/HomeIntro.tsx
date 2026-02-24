@@ -1,5 +1,8 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import TypewriterTitle from "./TypewriterTitle";
+import Image from "next/image";
 
 const HomeIntro = () => {
   const [offset, setOffset] = useState(0);
@@ -17,29 +20,79 @@ const HomeIntro = () => {
   }, []);
 
   return (
-    <div className="relative bg-manila-folder min-h-screen overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-udeo-charcoal via-gray-900 to-udeo-red-dark">
+      {/* Parallax background image */}
       <div
-        className="top-0 left-0 absolute bg-[url('/textures/paper-texture.png')] opacity-40 w-full h-full"
-        style={{ transform: `translateY(${offset * 0.5}px)` }}
-      ></div>
-      <div className="top-0 left-0 absolute bg-gradient-to-br from-manila-light via-manila-folder to-manila-dark opacity-30 w-full h-full"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-manila-shadow"></div>
-      <div className="relative z-10 flex flex-col justify-center items-center p-8 min-h-screen">
-        <div className="border-police-stamp bg-manila-light shadow-lg p-8 border-t-8 rounded-lg w-full max-w-4xl">
-          <TypewriterTitle
-            text="Expediente: Facultad de Ciencias Forenses e Investigación Criminal"
-            delay={100}
-          />
-          <div className="bg-white bg-opacity-70 shadow-inner mb-12 p-4 rounded-lg">
-            <p className="font-semibold text-2xl text-cardboard-dark text-center">
+        className="absolute inset-0 opacity-20"
+        style={{ transform: `translateY(${offset * 0.3}px)` }}
+      >
+        <Image
+          src="/hero.png"
+          alt="Hero background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
+      {/* Subtle gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-t from-udeo-charcoal via-transparent to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-udeo-red-dark/30 via-transparent to-udeo-red/20"></div>
+
+      {/* Content */}
+      <div className="relative z-10 flex flex-col justify-center items-center px-4 md:px-8 min-h-screen">
+        <div className="max-w-5xl w-full text-center">
+          {/* University logo */}
+          <div className="mb-8 flex justify-center">
+            <Image
+              src="/logo.png"
+              alt="UDEO Logo"
+              width={200}
+              height={80}
+              className="drop-shadow-2xl"
+              priority
+            />
+          </div>
+
+          {/* Typewriter title */}
+          <div className="mb-6">
+            <TypewriterTitle
+              text="Facultad de Ciencias Forenses e Investigación Criminal"
+              delay={80}
+            />
+          </div>
+
+          {/* Subtitle */}
+          <div className="mb-10">
+            <p className="text-xl md:text-2xl text-white/90 font-light max-w-3xl mx-auto leading-relaxed">
               14 años formando a los mejores
               <br />
-              investigadores criminales del país
+              <span className="text-udeo-gold-light font-semibold">
+                investigadores criminales del país
+              </span>
             </p>
           </div>
+
+          {/* CTA buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="/oferta-academica"
+              className="bg-udeo-red hover:bg-udeo-red-dark text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-lg hover:scale-105"
+            >
+              Ver Oferta Académica
+            </a>
+            <a
+              href="/about"
+              className="border-2 border-white/40 hover:border-udeo-gold text-white hover:text-udeo-gold-light font-bold py-4 px-8 rounded-full transition-all duration-300 text-lg hover:scale-105 backdrop-blur-sm"
+            >
+              Conocer Más
+            </a>
+          </div>
         </div>
-        <div className="mt-8 crime-tape">
-          <span className="mt-6 mb-4 font-bold text-police-stamp">
+
+        {/* Crime tape at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 crime-tape">
+          <span className="font-bold text-udeo-red-dark">
             ¡Atención! Solo los valientes cruzan esta línea para luchar por la
             justicia en Guatemala.
           </span>

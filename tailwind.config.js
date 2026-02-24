@@ -23,7 +23,6 @@ module.exports = {
           100: "#fef3c7",
           200: "#fde68a",
           300: "#fcd34d",
-          // ... otros tonos de amber si es necesario
         },
         cardboard: {
           lighter: "#E5D3B3",
@@ -32,10 +31,19 @@ module.exports = {
           dark: "#654321",
           darker: "#3E2723",
         },
+        udeo: {
+          red: "#b40001",
+          "red-dark": "#8a0001",
+          "red-light": "#d43f3f",
+          gold: "#d4a017",
+          "gold-light": "#f0c850",
+          "gold-pale": "#fdf6e3",
+          charcoal: "#1a1a1a",
+        },
         "manila-folder": "#f3e5ab",
         "manila-dark": "#e6d08f",
         "manila-light": "#fff9e6",
-        "manila-shadow": "rgba(160, 82, 45, 0.2)", // Un marrón semitransparente
+        "manila-shadow": "rgba(160, 82, 45, 0.2)",
         "police-stamp": "#1c4966",
         "police-report": "#2c2c2c",
       },

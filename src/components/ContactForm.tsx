@@ -11,7 +11,7 @@ export default function ContactForm() {
               Nombre
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-udeo-red/50 focus:border-udeo-red text-base"
               id="nombre"
               type="text"
               placeholder="Nombre"
@@ -27,7 +27,7 @@ export default function ContactForm() {
               Apellido
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-udeo-red/50 focus:border-udeo-red text-base"
               id="apellido"
               type="text"
               placeholder="Apellido"
@@ -43,7 +43,7 @@ export default function ContactForm() {
               Correo electrónico
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-udeo-red/50 focus:border-udeo-red text-base"
               id="email"
               type="email"
               placeholder="Correo electrónico"
@@ -59,7 +59,7 @@ export default function ContactForm() {
               Teléfono
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-udeo-red/50 focus:border-udeo-red text-base"
               id="telefono"
               type="text"
               placeholder="Teléfono"
@@ -69,7 +69,7 @@ export default function ContactForm() {
           </div>
         </div>
         <div className="flex justify-center mt-6">
-          <button className="bg-gray-800 hover:shadow-lg hover:bg-blue-900 text-yellow-200 hover:text-white py-2 px-4 font-bold flex items-center shadow-xl rounded-full">
+          <button className="bg-udeo-red hover:bg-udeo-red-dark text-white py-3 px-6 font-bold flex items-center justify-center shadow-xl rounded-full w-full md:w-auto transition-colors">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

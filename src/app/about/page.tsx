@@ -1,16 +1,19 @@
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
+import NavBar from "@/components/NavBar";
 
 export default function Page() {
   return (
     <div className="">
-      <div className="container m-auto items-center justify-center mt-12">
-        <h1 className="mb-12 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">
+      <NavBar />
+      <div className="pt-20"></div>
+      <div className="container m-auto items-center justify-center mt-12 px-4">
+        <h1 className="mb-12 text-2xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r to-udeo-red-dark from-udeo-red">
             Facultad de Ciencias Forenses <br /> e Investigación Criminal
           </span>
         </h1>
-        <p className="text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-700 text-justify">
+        <p className="text-base md:text-lg font-normal text-gray-700 lg:text-xl dark:text-gray-700 text-justify">
           La Facultad de ciencias forenses e investigación criminal está
           comprometida con la sociedad en darle a nuestros estudiantes una
           educación integral de la más alta calidad tanto a nivel pregrado,
@@ -22,8 +25,8 @@ export default function Page() {
         </p>
       </div>
 
-      <div className="container m-auto flex flex-col md:flex-row  mt-6 justify-center items-center">
-        <div className="text-lg font-normal text-justify text-gray-700 lg:text-xl">
+      <div className="container m-auto flex flex-col md:flex-row mt-6 justify-center items-center px-4">
+        <div className="text-base md:text-lg font-normal text-justify text-gray-700 lg:text-xl">
           En el estudio de las ciencias forenses y la investigación criminal
           existen más de ciento cincuenta líneas de trabajo que se pueden
           transformar en programas educativos e investigaciones generando
@@ -38,8 +41,8 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full m-auto my-8  bg-yellow-200">
-        <div className="container m-auto p-8  grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="w-full m-auto my-8 bg-udeo-gold-pale">
+        <div className="container m-auto p-4 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-white p-4 rounded-xl text-justify shadow-lg">
             <h2 className="text-lg font-semibold mb-4">Misión</h2>
             <p className="text-gray-700">
@@ -74,7 +77,7 @@ export default function Page() {
       </div>
 
       <div className="">
-        <div className="container m-auto grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+        <div className="container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4">
           <div className="bg-white p-4 rounded-lg shadow">
             <Image
               src="/fotos-diplomado/1.jpg"
@@ -114,8 +117,8 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full bg-yellow-200 mt-6">
-        <div className="container m-auto  py-8">
+      <div className="w-full bg-udeo-gold-pale mt-6">
+        <div className="container m-auto px-4 py-6 md:py-8">
           <h2 className="text-gray-900 text-2xl font-bold text-center">
             Solicitar más información
           </h2>

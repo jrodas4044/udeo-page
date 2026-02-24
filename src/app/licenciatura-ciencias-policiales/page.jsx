@@ -5,14 +5,16 @@ import { Carousel } from "flowbite-react";
 import Image from "next/image";
 import { Card } from "flowbite-react";
 import ContactForm from "@/components/ContactForm";
+import NavBar from "@/components/NavBar";
 
 export default function Page() {
   return (
     <div>
-      <div className="container m-auto items-center justify-center pt-24  px-8 pb-2">
+      <NavBar />
+      <div className="container m-auto items-center justify-center pt-24 px-4 md:px-8 pb-2">
         <div>
-          <h1 className="mb-8 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">
+          <h1 className="mb-8 text-2xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r to-udeo-red-dark from-udeo-red">
               Licenciatura en <br /> Ciencias Policiales
             </span>
           </h1>
@@ -61,7 +63,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full bg-yellow-200 py-8 px-4 mt-6">
+      <div className="w-full bg-udeo-gold-pale py-8 px-4 mt-6">
         <div className="mt-6 mb-8 container m-auto">
           <h1 className="text-3xl text-center font-bold text-gray-700 border-b border-yellow-400 pb-4">
             Pensum
@@ -133,7 +135,7 @@ export default function Page() {
       </div>
 
       <div className="  mb-2">
-        <div className="container m-auto grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+        <div className="container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4">
           <div className="bg-white p-4 rounded-lg shadow">
             <Image
               src="/fotos-policia/1.png"
@@ -173,8 +175,8 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="bg-yellow-200">
-        <div className="container m-auto  py-8">
+      <div className="bg-udeo-gold-pale">
+        <div className="container m-auto px-4 py-6 md:py-8">
           <h2 className="text-gray-900 text-2xl font-bold text-center">
             Solicitar más información
           </h2>

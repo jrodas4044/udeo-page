@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,23 +12,29 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="top-0 right-0 left-0 z-50 fixed bg-cardboard-dark text-white">
+    <nav className="top-0 right-0 left-0 z-50 fixed bg-udeo-red shadow-lg text-white">
       <div className="mx-auto px-4 container">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-3">
           <Link href="/">
             <Image src="/logo.png" alt="Logo UDEO" width={150} height={50} />
           </Link>
-          <div className="md:flex space-x-4 hidden">
-            <Link href="/" className="hover:text-cardboard-light">
+          <div className="md:flex space-x-6 hidden">
+            <Link
+              href="/"
+              className="hover:text-udeo-gold-light transition-colors font-semibold"
+            >
               Inicio
             </Link>
             <Link
               href="/oferta-academica"
-              className="hover:text-cardboard-light"
+              className="hover:text-udeo-gold-light transition-colors font-semibold"
             >
               Oferta Académica
             </Link>
-            <Link href="/About" className="hover:text-cardboard-light">
+            <Link
+              href="/about"
+              className="hover:text-udeo-gold-light transition-colors font-semibold"
+            >
               Sobre Nosotros
             </Link>
           </div>
@@ -42,30 +50,44 @@ const NavBar: React.FC = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
+                d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
               />
             </svg>
           </button>
         </div>
       </div>
-      {isMenuOpen && (
-        <div className="md:hidden">
-          <div className="space-y-1 px-2 sm:px-3 pt-2 pb-3">
-            <Link href="/" className="block hover:text-cardboard-light">
-              Inicio
-            </Link>
-            <Link
-              href="/oferta-academica"
-              className="block hover:text-cardboard-light"
-            >
-              Oferta Académica
-            </Link>
-            <Link href="/about" className="block hover:text-cardboard-light">
-              Sobre Nosotros
-            </Link>
-          </div>
+      {/* Mobile menu */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="bg-udeo-red-dark px-4 py-3 space-y-1">
+          <Link
+            href="/"
+            className="block py-3 px-4 rounded-lg hover:bg-udeo-red transition-colors font-semibold"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Inicio
+          </Link>
+          <div className="border-t border-white/20"></div>
+          <Link
+            href="/oferta-academica"
+            className="block py-3 px-4 rounded-lg hover:bg-udeo-red transition-colors font-semibold"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Oferta Académica
+          </Link>
+          <div className="border-t border-white/20"></div>
+          <Link
+            href="/about"
+            className="block py-3 px-4 rounded-lg hover:bg-udeo-red transition-colors font-semibold"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Sobre Nosotros
+          </Link>
         </div>
-      )}
+      </div>
     </nav>
   );
 };

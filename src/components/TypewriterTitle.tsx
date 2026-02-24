@@ -36,10 +36,10 @@ const TypewriterTitle: React.FC<TypewriterTitleProps> = ({ text, delay }) => {
 
   return (
     <div className={specialElite.className}>
-      <h1 className="mb-8 font-bold text-5xl text-center text-gray-700">
+      <h1 className="mb-8 font-bold text-2xl md:text-4xl lg:text-5xl text-center text-white">
         {currentText}
         {!isTypingComplete && (
-          <span className="text-typewriter-ink animate-blink">|</span>
+          <span className="text-udeo-gold-light animate-blink">|</span>
         )}
       </h1>
     </div>

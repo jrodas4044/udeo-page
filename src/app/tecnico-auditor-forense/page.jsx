@@ -5,14 +5,16 @@ import { Carousel } from "flowbite-react";
 import Image from "next/image";
 import { Card } from "flowbite-react";
 import ContactForm from "@/components/ContactForm";
+import NavBar from "@/components/NavBar";
 
 export default function Page() {
   return (
     <div>
-      <div className="container m-auto items-center justify-center pt-24  px-8 pb-2">
+      <NavBar />
+      <div className="container m-auto items-center justify-center pt-24 px-4 md:px-8 pb-2">
         <div>
-          <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r to-yellow-700 from-yellow-400">
+          <h1 className="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r to-udeo-red-dark from-udeo-red">
               Técnico Auditor Forense <br /> en Investigaciones Criminales
             </span>
           </h1>
@@ -176,7 +178,7 @@ export default function Page() {
           </Tabs.Item>
         </Tabs.Group>
       </div>
-      <div className="container m-auto  py-8">
+      <div className="container m-auto px-4 py-6 md:py-8">
         <h2 className="text-gray-900 text-2xl font-bold text-center">
           Solicitar más información
         </h2>
