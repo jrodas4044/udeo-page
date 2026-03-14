@@ -145,7 +145,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="text-white/40 text-xs uppercase tracking-wide mb-0.5">Email</p>
-                    <a href="mailto:informacion@udeoberistain.edu.gt" className="text-white/70 hover:text-udeo-gold text-sm transition-colors duration-200">
+                    <a href="mailto:informacion@udeoberistain.edu.gt" className="text-white/70 hover:text-udeo-gold text-sm transition-colors duration-200 break-all">
                       informacion@udeoberistain.edu.gt
                     </a>
                   </div>

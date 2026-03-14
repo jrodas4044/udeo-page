@@ -149,7 +149,7 @@ export default function About() {
                     className="w-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-5 -left-5 bg-udeo-red text-white rounded-2xl px-5 py-4 shadow-xl">
+                <div className="absolute bottom-2 left-2 md:-bottom-5 md:-left-5 bg-udeo-red text-white rounded-2xl px-5 py-4 shadow-xl">
                   <p className="text-3xl font-extrabold leading-none">1°</p>
                   <p className="text-xs uppercase tracking-widest text-white/80 mt-1">En Guatemala</p>
                 </div>

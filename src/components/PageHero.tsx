@@ -28,7 +28,7 @@ const PageHero = ({ title, subtitle }: PageHeroProps) => {
 
       {/* Content */}
       <div
-        className="relative z-10 flex flex-col justify-center items-center px-4 md:px-8 text-center"
+        className="relative z-10 flex flex-col justify-center items-center px-4 md:px-8 text-center pt-20 pb-10"
         style={{ minHeight: "42vh" }}
       >
         <div className="max-w-4xl w-full">

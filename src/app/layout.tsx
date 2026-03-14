@@ -1,4 +1,5 @@
 import "./globals.css";
+import type { Metadata } from "next";
 import { Jost, Montserrat } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -16,9 +17,39 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-export const metadata = {
-  title: "Universidad De Occidente - Extensión Antonio Beristain",
-  description: "Facultad de Ciencias Forenses e Investigación Criminal",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://udeoberistain.edu.gt"),
+  title: {
+    default: "UDEO Ext. Beristain | Ciencias Forenses e Investigación Criminal",
+    template: "%s | UDEO Ext. Beristain",
+  },
+  description:
+    "Primera Facultad de Ciencias Forenses e Investigación Criminal de Guatemala. +3,000 graduados desde 2010. Técnico, Licenciaturas, Maestría y Doctorado.",
+  keywords: [
+    "ciencias forenses Guatemala",
+    "investigación criminal",
+    "criminalística",
+    "UDEO",
+    "licenciatura forense",
+    "maestría investigación criminal",
+    "doctorado justicia criminal",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "es_GT",
+    siteName: "UDEO Ext. Antonio Beristain",
+    title: "UDEO Ext. Beristain | Ciencias Forenses e Investigación Criminal",
+    description:
+      "Primera Facultad de Ciencias Forenses e Investigación Criminal de Guatemala. +3,000 graduados desde 2010.",
+    images: [{ url: "/hero.png", width: 1200, height: 630, alt: "UDEO Ext. Antonio Beristain" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UDEO Ext. Beristain | Ciencias Forenses",
+    description:
+      "Primera Facultad de Ciencias Forenses e Investigación Criminal de Guatemala.",
+    images: ["/hero.png"],
+  },
 };
 
 export default function RootLayout({

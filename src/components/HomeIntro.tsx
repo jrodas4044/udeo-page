@@ -101,13 +101,13 @@ const HomeIntro = () => {
                 </div>
 
                 {/* Floating stat — top left */}
-                <div className="absolute -top-4 -left-4 bg-udeo-red text-white px-4 py-3 rounded-xl shadow-xl">
+                <div className="absolute top-2 left-2 md:-top-4 md:-left-4 bg-udeo-red text-white px-4 py-3 rounded-xl shadow-xl">
                   <p className="text-2xl font-extrabold leading-none">14+</p>
                   <p className="text-xs text-white/80 uppercase tracking-wide mt-0.5">Años</p>
                 </div>
 
                 {/* Floating stat — bottom right */}
-                <div className="absolute -bottom-4 -right-4 bg-white text-gray-900 px-4 py-3 rounded-xl shadow-xl">
+                <div className="absolute bottom-2 right-2 md:-bottom-4 md:-right-4 bg-white text-gray-900 px-4 py-3 rounded-xl shadow-xl">
                   <p className="text-2xl font-extrabold leading-none text-udeo-red">+3,000</p>
                   <p className="text-xs text-gray-500 uppercase tracking-wide mt-0.5">Graduados</p>
                 </div>

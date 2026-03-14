@@ -84,7 +84,7 @@ export default function FacultySection() {
             <div className="relative">
               <span
                 aria-hidden="true"
-                className="absolute -top-8 -left-4 text-[9rem] md:text-[11rem] font-extrabold text-gray-100 select-none leading-none pointer-events-none"
+                className="absolute -top-8 -left-4 text-[5rem] md:text-[9rem] lg:text-[11rem] font-extrabold text-gray-100 select-none leading-none pointer-events-none"
               >
                 14
               </span>
@@ -165,7 +165,7 @@ export default function FacultySection() {
           >
             <div className="relative">
               {/* Floating badge */}
-              <div className="absolute -top-4 -right-2 z-20 bg-udeo-red text-white text-xs font-bold px-4 py-2 rounded-full shadow-xl tracking-wide">
+              <div className="absolute top-2 right-2 md:-top-4 md:-right-2 z-20 bg-udeo-red text-white text-xs font-bold px-4 py-2 rounded-full shadow-xl tracking-wide">
                 Primera en Guatemala
               </div>
 

@@ -113,13 +113,13 @@ export default function WhyStudySection() {
               </div>
 
               {/* Floating stat badge — top left */}
-              <div className="absolute -top-5 -left-5 bg-udeo-red text-white rounded-2xl px-5 py-4 shadow-xl">
+              <div className="absolute top-2 left-2 md:-top-5 md:-left-5 bg-udeo-red text-white rounded-2xl px-5 py-4 shadow-xl">
                 <p className="text-3xl font-extrabold leading-none">14+</p>
                 <p className="text-xs uppercase tracking-widest text-white/80 mt-1">Años</p>
               </div>
 
               {/* Floating stat badge — bottom right */}
-              <div className="absolute -bottom-5 -right-5 bg-white text-gray-900 rounded-2xl px-5 py-4 shadow-xl">
+              <div className="absolute bottom-2 right-2 md:-bottom-5 md:-right-5 bg-white text-gray-900 rounded-2xl px-5 py-4 shadow-xl">
                 <p className="text-3xl font-extrabold leading-none text-udeo-red">+3,000</p>
                 <p className="text-xs uppercase tracking-widest text-gray-500 mt-1">Graduados</p>
               </div>
