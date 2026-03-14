@@ -1,4 +1,3 @@
-import { Festive } from "next/font/google";
 import Image from "next/image";
 import ProgramCard from "./programCard";
 

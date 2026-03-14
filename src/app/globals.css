@@ -4,6 +4,11 @@
 
 body {
   @apply bg-gray-100;
+  font-family: var(--font-jost), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
 }
 
 #home-header {
@@ -24,6 +29,26 @@ body {
 
 .fadeInUp-animation {
   animation: 1.5s fadeInUp;
+}
+
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroFadeRight {
+  from { opacity: 0; transform: translateX(28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.hero-animate {
+  opacity: 0;
+  animation: heroFadeUp 0.7s ease forwards;
+}
+
+.hero-animate-right {
+  opacity: 0;
+  animation: heroFadeRight 0.8s ease forwards;
 }
 /*
   HomeIntro

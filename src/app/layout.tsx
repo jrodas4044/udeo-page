@@ -1,12 +1,19 @@
 import "./globals.css";
-import { Special_Elite } from "next/font/google";
+import { Jost, Montserrat } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Script from "next/script";
 
-const specialElite = Special_Elite({
-  weight: "400",
+const jost = Jost({
+  weight: ["300", "400", "500", "600"],
   subsets: ["latin"],
+  variable: "--font-jost",
+});
+
+const montserrat = Montserrat({
+  weight: ["400", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-montserrat",
 });
 
 export const metadata = {
@@ -21,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={specialElite.className}>
+      <body className={`${jost.variable} ${montserrat.variable} ${jost.className}`}>
         {children}
 
         <Footer />
