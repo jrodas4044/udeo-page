@@ -55,48 +55,49 @@ export default function Page() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <PensumCard index={1} period="1er Semestre" courses={[
-              "Fundamentos del derecho",
-              "Principios de la investigación técnica forense",
-              "Anatomía forense",
-              "Planimetría, técnicas audiovisuales y documentación judicial",
+              "Fundamentos de Derecho",
+              "Principios de la Investigación Técnica Forense",
+              "Anatomía Forense",
+              "Planimetría, Técnicas Audiovisuales y Documentación Judicial",
               "Criminalística I",
             ]} />
             <PensumCard index={2} period="2do Semestre" courses={[
               "Desviología Criminológica",
-              "Técnicas especiales de Investigación",
-              "Oratoria y lenguaje forense",
-              "Razón y fe",
-              "Sistemas de identificación criminal y Lofoscopía",
+              "Técnicas Especiales de Investigación",
+              "Oratoria y Lenguaje Forense",
+              "Ética, Cultura y Valores",
+              "Sistemas de Identificación Criminal y Lofoscopía",
             ]} />
             <PensumCard index={3} period="3er Semestre" courses={[
-              "Auditoria forense I",
+              "Auditoría Forense I",
               "Estudio de la Constitución Política de la República de Guatemala",
-              "Tanatología forense",
+              "Tanatología Forense",
               "Proceso Económico I",
-              "Investigación criminal, análisis de casos",
+              "Investigación Criminal, Análisis de Casos",
               "Fotografía Audiovisual y Forense",
             ]} />
             <PensumCard index={4} period="4to Semestre" courses={[
-              "Auditoria forense II",
-              "Rastros biológicos y química forense",
-              "La evidencia criminal y el valor probatorio",
-              "Proceso económico II",
-              "Psicología criminal",
+              "Auditoría Forense II",
+              "Rastros Biológicos y Química Forense",
+              "La Evidencia Criminal y El Valor Probatorio",
+              "Proceso Económico II",
+              "Psicología Criminal",
             ]} />
             <PensumCard index={5} period="5to Semestre" courses={[
-              "Evidencia criminalística en documentos, protocolos forenses y otros formatos",
-              "Antropología criminal guatemalteca",
-              "Física forense, pruebas balísticas y explosivos",
-              "Filosofía social de Hayek",
-              "Laboratorio de Investigación criminal",
-              "Laboratorio de auditoria forense",
+              "Evidencia Criminalística en Documentos, Protocolos Forenses y Otros Formatos",
+              "Antropología Criminal Guatemalteca",
+              "Física Forense, Pruebas Balísticas y Explosivos",
+              "Filosofía Social de Hayek",
+              "Laboratorio de Investigación Criminal",
+              "Laboratorio de Auditoría Forense",
             ]} />
             <PensumCard index={6} period="6to Semestre" courses={[
-              "Filosofía Social de Mises — El perito en el proceso penal",
-              "Análisis delictivo, gestión de calidad forense",
-              "Técnicas de redacción de informes",
-              "Auditoria forense financiera",
-              "Procesamiento del escenario criminal — Ejercicio profesional supervisado",
+              "Filosofía Social de Mises",
+              "El Perito en el Proceso Penal",
+              "Análisis Delictivo, Gestión de Calidad Forense",
+              "Técnicas de Redacción de Informes",
+              "Auditoría Forense Financiera",
+              "Procesamiento del Escenario Criminal. Ejercicio Profesional Supervisado",
             ]} />
           </div>
         </div>
@@ -120,7 +121,7 @@ export default function Page() {
                 <h3 className="text-white font-bold text-lg">Requisitos</h3>
               </div>
               <ul className="space-y-2.5">
-                {["Currículum Vitae", "Cierre de Pensum Diversificado", "Carta de Exposición de Motivos", "Fotostática de título de Diversificado (con sello de Contraloría, SAT y 3 fotocopias)", "Fotocopias del DPI", "Certificación de nacimiento emitida por RENAP reciente y 3 fotocopias", "4 fotografías tamaño cédula a color con ropa formal", "Carencia de antecedentes penales y policiacos"].map((item, i) => (
+                {["Síntesis curricular en una hoja.", "Cierre de Pensum Diversificado.", "Carta donde exponga su deseo de incorporarte a la Facultad de Ciencias Forenses.", "3 Copias oficio del título de diversificado con sello de la Contraloría General de Cuentas (en alta definición).", "Fotocopia del DPI.", "Certificación de Nacimiento emitida por RENAP.", "4 Fotografías tamaño cédula a color, reciente con ropa formal.", "Carencia de Antecedentes Penales y Policíacos.", "Folder Oficio Color Negro, con gancho."].map((item, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-white/70 text-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-udeo-gold mt-[5px] flex-shrink-0" />
                     {item}

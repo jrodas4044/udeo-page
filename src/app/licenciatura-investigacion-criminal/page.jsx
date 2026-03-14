@@ -95,6 +95,7 @@ export default function Page() {
               "Fundamentos de Seguridad",
               "Documentoscopía y Grafotecnia",
               "Análisis de Información Comunicacional y Lingüística Forense",
+              "Proceso Económico I",
             ]} />
             <PensumCard index={2} period="Segundo Semestre" courses={[
               "Seguridad Criminal Operacional",
@@ -102,7 +103,8 @@ export default function Page() {
               "Técnicas de Entrevista e Interrogatorio Forenses",
               "Proyecciones Estratégicas de la Política Criminal",
               "Administración de Seguridad y Riesgo",
-              "Mecánica de Hechos — Simulación Virtual, Posición Víctima-Victimario",
+              "Mecánica de Hechos Simulación Virtual, Posición Víctima-Victimario",
+              "Proceso Económico",
             ]} />
             <PensumCard index={3} period="Tercer Semestre" courses={[
               "Dirección y Administración de Unidades Especializadas en Investigación de Delitos",
@@ -110,7 +112,8 @@ export default function Page() {
               "Investigaciones en Seguridad Bancaria",
               "Retórica y Oratoria Forense",
               "Metodología de la Investigación Científica en Dictámenes Periciales",
-              "Praxeología Criminal I — Ejercicio Profesional Supervisado",
+              "Praxeología Criminal I. Ejercicio Profesional Supervisado",
+              "Filosofía Social de Mises",
             ]} />
             <PensumCard index={4} period="Cuarto Semestre" courses={[
               "Organización y Planeación en Inteligencia Criminal",
@@ -118,7 +121,9 @@ export default function Page() {
               "Seguridad e Inteligencia Criminal",
               "Teoría y Manejo de Casos en el Proceso Penal Acusatorio",
               "Victimodogmática",
-              "Praxeología Criminal II — Ejercicio Profesional Supervisado",
+              "Praxeología Criminal II. Ejercicio Profesional Supervisado",
+              "Filosofía Social de Hayek",
+              "Ética, Cultura y Valores",
             ]} />
           </div>
         </div>
