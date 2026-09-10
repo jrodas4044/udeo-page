@@ -42,6 +42,7 @@ const NavBar: React.FC = () => {
             <Link href="/" className={linkClass}>Inicio</Link>
             <Link href="/oferta-academica" className={linkClass}>Oferta Académica</Link>
             <Link href="/about" className={linkClass}>Sobre Nosotros</Link>
+            <Link href="/blog" className={linkClass}>Blog</Link>
             <a
               href="#contact"
               className={`text-sm font-semibold py-2 px-5 rounded-md transition-colors ${
@@ -99,6 +100,13 @@ const NavBar: React.FC = () => {
             onClick={() => setIsMenuOpen(false)}
           >
             Sobre Nosotros
+          </Link>
+          <Link
+            href="/blog"
+            className="block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-50 font-semibold text-sm transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Blog
           </Link>
           <div className="pt-2 pb-1">
             <a

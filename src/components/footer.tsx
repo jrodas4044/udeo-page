@@ -14,6 +14,7 @@ const navLinks = [
   { label: "Inicio", href: "/" },
   { label: "Oferta Académica", href: "/oferta-academica" },
   { label: "Sobre Nosotros", href: "/about" },
+  { label: "Blog", href: "/blog" },
 ];
 
 const socialLinks = [
