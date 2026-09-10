@@ -44,11 +44,17 @@ const highlights = [
 ];
 
 const photos = [
-  { src: "/fotos-policia/1.png", caption: "Formación policial" },
+  { src: "/fotos-policia/1.jpg", caption: "Formación policial" },
   { src: "/fotos-policia/2.jpg", caption: "Prácticas de campo" },
-  { src: "/fotos-policia/3.png", caption: "Actividades académicas" },
+  { src: "/fotos-policia/3.jpg", caption: "Actividades académicas" },
   { src: "/fotos-policia/4.jpg", caption: "Comunidad estudiantil" },
 ];
+
+export const metadata = {
+  title: "Licenciatura en Ciencias Policiales",
+  description:
+    "Licenciatura en Ciencias Policiales en Guatemala: aplicación de la ley, ética y seguridad ciudadana con docentes en ejercicio.",
+};
 
 export default function Page() {
   return (

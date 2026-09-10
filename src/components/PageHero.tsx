@@ -9,7 +9,7 @@ const PageHero = ({ title, subtitle }: PageHeroProps) => {
   return (
     <div className="relative overflow-hidden bg-udeo-charcoal">
       <Image
-        src="/hero.png"
+        src="/hero.jpg"
         alt=""
         fill
         priority

@@ -5,7 +5,7 @@ const HomeIntro = () => {
   return (
     <section className="relative min-h-[92vh] overflow-hidden bg-udeo-charcoal">
       <Image
-        src="/hero.png"
+        src="/hero.jpg"
         alt=""
         fill
         priority

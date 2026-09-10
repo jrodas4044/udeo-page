@@ -20,11 +20,6 @@ h1, h2, h3 {
   .hero-animate, .hero-animate-right { animation: none; opacity: 1; }
 }
 
-#home-header {
-  background: url("/hero.png") no-repeat center center;
-  background-size: cover;
-}
-
 @keyframes heroFadeUp {
   from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }

@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Jost, Fraunces } from "next/font/google";
-import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Script from "next/script";
 
@@ -43,15 +42,38 @@ export const metadata: Metadata = {
     title: "UDEO Ext. Beristain | Ciencias Forenses e Investigación Criminal",
     description:
       "Primera Facultad de Ciencias Forenses e Investigación Criminal de Guatemala. +3,000 graduados desde 2010.",
-    images: [{ url: "/hero.png", width: 1200, height: 630, alt: "UDEO Ext. Antonio Beristain" }],
+    images: [{ url: "/hero.jpg", width: 1200, height: 630, alt: "UDEO Ext. Antonio Beristain" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "UDEO Ext. Beristain | Ciencias Forenses",
     description:
       "Primera Facultad de Ciencias Forenses e Investigación Criminal de Guatemala.",
-    images: ["/hero.png"],
+    images: ["/hero.jpg"],
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "Universidad de Occidente, Extensión Antonio Beristain",
+  alternateName: "UDEO Ext. Beristain",
+  url: "https://udeoberistain.edu.gt",
+  logo: "https://udeoberistain.edu.gt/logo.png",
+  email: "informacion@udeoberistain.edu.gt",
+  telephone: "+502 2458-4551",
+  foundingDate: "2010",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "2ª Calle 31-38, Interior Colegio Montecarmelo, Calzada Doroteo Guamuch Flores",
+    addressLocality: "Guatemala",
+    addressCountry: "GT",
+  },
+  sameAs: [
+    "https://www.facebook.com/UniversidadDeOccidenteExtensionAntonioBeristain",
+    "https://www.instagram.com/antonio_beristain_udeo/",
+    "https://www.youtube.com/@udeoberistain5063",
+  ],
 };
 
 export default function RootLayout({
@@ -62,6 +84,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${jost.variable} ${fraunces.variable} ${jost.className}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
 
         <Footer />

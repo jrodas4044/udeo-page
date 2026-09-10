@@ -40,7 +40,7 @@ export default function WhyStudySection() {
           <div className="md:w-2/5 w-full">
             <div className="rounded-md overflow-hidden">
               <Image
-                src="/1.png"
+                src="/1.jpg"
                 width={500}
                 height={600}
                 alt="Estudiante de la facultad con hoja de huellas dactilares"
