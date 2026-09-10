@@ -71,15 +71,14 @@ export default function Page() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-8">
             <div>
-              <p className="text-udeo-red font-semibold text-xs uppercase tracking-widest mb-3">Doctorado</p>
-              <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900 leading-tight max-w-2xl">
-                El nivel más alto de formación en <span className="text-udeo-red">ciencias forenses</span>
+              <h2 className="text-3xl md:text-4xl text-gray-900 leading-tight max-w-2xl">
+                El nivel más alto de formación en ciencias forenses
               </h2>
             </div>
             <a
               href="https://drive.google.com/file/d/1B_5_M89Y_0EBERUUIiup55Kf2xEk7vNK/view"
               target="_blank"
-              className="flex-shrink-0 flex items-center gap-2 font-bold px-5 py-2.5 text-sm bg-udeo-red text-white hover:bg-udeo-red-dark rounded-full transition-colors shadow-md"
+              className="flex-shrink-0 flex items-center gap-2 font-bold px-5 py-2.5 text-sm bg-udeo-red text-white hover:bg-udeo-red-dark rounded-md transition-colors shadow-md"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
               Descargar Folleto
@@ -93,9 +92,9 @@ export default function Page() {
           {/* Objectives */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {objectives.map((obj, i) => (
-              <div key={i} className="bg-gray-50 border border-gray-100 rounded-xl p-6 hover:border-udeo-red/20 hover:shadow-md transition-all duration-300">
-                <div className="w-12 h-12 bg-udeo-red rounded-xl flex items-center justify-center text-white mb-4">{obj.icon}</div>
-                <h3 className="font-bold text-gray-900 text-base mb-2">{obj.title}</h3>
+              <div key={i} className="bg-gray-50 border border-gray-100 rounded-md p-6 hover:border-udeo-red/20 transition-all duration-300">
+                <div className="w-12 h-12 bg-udeo-red rounded-md flex items-center justify-center text-white mb-4">{obj.icon}</div>
+                <h3 className="text-gray-900 text-base mb-2">{obj.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{obj.desc}</p>
               </div>
             ))}
@@ -107,14 +106,13 @@ export default function Page() {
       <section className="bg-white py-14 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <p className="text-udeo-red font-semibold text-xs uppercase tracking-widest mb-2">Nuestra comunidad</p>
-            <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900">Vida Académica</h2>
-            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-full" />
+            <h2 className="text-3xl md:text-4xl text-gray-900">Vida Académica</h2>
+            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-md" />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {photos.map((photo, i) => (
-              <div key={i} className="group relative rounded-2xl overflow-hidden shadow-md aspect-square">
-                <Image src={photo.src} alt={photo.caption} fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div key={i} className="group relative rounded-md overflow-hidden shadow-md aspect-square">
+                <Image src={photo.src} alt={photo.caption} fill className="object-cover transition-transform duration-500 group-" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <span className="text-white font-semibold text-sm">{photo.caption}</span>
                 </div>
@@ -128,36 +126,35 @@ export default function Page() {
       <section className="bg-udeo-gold-pale py-14 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <p className="text-udeo-red font-semibold text-xs uppercase tracking-widest mb-2">Investigación doctoral</p>
-            <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900">Líneas y Requisitos</h2>
-            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-full" />
+            <h2 className="text-3xl md:text-4xl text-gray-900">Líneas y Requisitos</h2>
+            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-md" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-              <h3 className="font-bold text-gray-900 text-lg mb-5 flex items-center gap-2">
-                <span className="w-1.5 h-6 bg-udeo-red rounded-full inline-block" />
+            <div className="bg-white rounded-md p-6 shadow-sm border border-gray-100">
+              <h3 className="text-gray-900 text-lg mb-5 flex items-center gap-2">
+                <span className="w-1.5 h-6 bg-udeo-red rounded-md inline-block" />
                 Líneas de Investigación
               </h3>
               <p className="text-gray-500 text-sm mb-4">El postulante realizará su investigación doctoral sobre una de las siguientes problemáticas:</p>
               <ul className="space-y-2.5">
                 {lineasInvestigacion.map((item, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-gray-700 text-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-udeo-red mt-[5px] flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-md bg-udeo-red mt-[5px] flex-shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-              <h3 className="font-bold text-gray-900 text-lg mb-5 flex items-center gap-2">
-                <span className="w-1.5 h-6 bg-udeo-gold rounded-full inline-block" />
+            <div className="bg-white rounded-md p-6 shadow-sm border border-gray-100">
+              <h3 className="text-gray-900 text-lg mb-5 flex items-center gap-2">
+                <span className="w-1.5 h-6 bg-udeo-gold rounded-md inline-block" />
                 Requisitos de Ingreso
               </h3>
               <p className="text-gray-500 text-sm mb-4">El postulante presentará una carta de exposición de motivos incluyendo:</p>
               <ul className="space-y-2.5">
                 {requisitosIngreso.map((item, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-gray-700 text-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-udeo-gold mt-[5px] flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-md bg-udeo-gold mt-[5px] flex-shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -171,9 +168,8 @@ export default function Page() {
       <section className="bg-udeo-charcoal py-14 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <p className="text-udeo-gold font-semibold text-xs uppercase tracking-widest mb-2">Metodología ABI</p>
-            <h2 className="font-extrabold text-3xl md:text-4xl text-white">Metodología del Programa</h2>
-            <div className="w-16 h-1 bg-udeo-gold mx-auto mt-4 rounded-full" />
+            <h2 className="text-3xl md:text-4xl text-white">Metodología del Programa</h2>
+            <div className="w-16 h-1 bg-udeo-gold mx-auto mt-4 rounded-md" />
           </div>
           <div className="max-w-3xl mx-auto">
             <p className="text-white/60 text-base text-center leading-relaxed mb-10">
@@ -181,8 +177,8 @@ export default function Page() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {fasesModulo.map((fase, i) => (
-                <div key={i} className="bg-white/5 border border-white/10 rounded-2xl p-5 text-center hover:border-udeo-gold/30 transition-all duration-300">
-                  <span className="inline-block bg-udeo-red text-white text-xs font-black px-3 py-1 rounded-full mb-3">{fase.code}</span>
+                <div key={i} className="bg-white/5 border border-white/10 rounded-md p-5 text-center hover:border-udeo-gold/30 transition-all duration-300">
+                  <span className="inline-block bg-udeo-red text-white text-xs font-black px-3 py-1 rounded-md mb-3">{fase.code}</span>
                   <p className="text-white/80 text-sm leading-snug">{fase.name}</p>
                 </div>
               ))}
@@ -198,9 +194,8 @@ export default function Page() {
       <section className="bg-gray-50 py-14 px-4">
         <div className="container m-auto">
           <div className="text-center mb-10">
-            <p className="text-udeo-red font-semibold text-xs uppercase tracking-widest mb-2">Plan de estudios</p>
-            <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900">Pensum Académico</h2>
-            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-full" />
+            <h2 className="text-3xl md:text-4xl text-gray-900">Pensum Académico</h2>
+            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-md" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <PensumCard index={1} period="Constructo de la conducta desviada" description="Teorías epistemológicas y criminológicas." />
@@ -225,9 +220,8 @@ export default function Page() {
       <div className="bg-udeo-gold-pale py-12 px-4">
         <div className="container mx-auto max-w-3xl">
           <div className="text-center mb-8">
-            <p className="text-udeo-red font-semibold text-xs uppercase tracking-widest mb-2">Egresados</p>
-            <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900">Perfil de Egreso</h2>
-            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-full" />
+            <h2 className="text-3xl md:text-4xl text-gray-900">Perfil de Egreso</h2>
+            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-md" />
           </div>
           <div className="space-y-4 text-gray-700 text-base leading-relaxed">
             <p>El Doctorado en Justicia Criminal y Ciencias Forenses posee el liderazgo académico nacional e internacional en las ciencias forenses; desde el 2012 con la creación de la primera Facultad de Ciencias Forenses e Investigación Criminal en Guatemala promovemos nuevos desafíos interdisciplinarios con conciencia social.</p>
@@ -241,11 +235,10 @@ export default function Page() {
       <section className="bg-udeo-charcoal py-14 px-4">
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-10">
-            <p className="text-udeo-gold font-semibold text-xs uppercase tracking-widest mb-2">Inversión</p>
-            <h2 className="font-extrabold text-3xl md:text-4xl text-white">Costos del Programa</h2>
-            <div className="w-16 h-1 bg-udeo-gold mx-auto mt-4 rounded-full" />
+            <h2 className="text-3xl md:text-4xl text-white">Costos del Programa</h2>
+            <div className="w-16 h-1 bg-udeo-gold mx-auto mt-4 rounded-md" />
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+          <div className="bg-white/5 border border-white/10 rounded-md overflow-hidden">
             {[
               { label: "Inscripción por módulo", qty: "×18 módulos", value: "Q500.00", note: "Incluye libro físico del docente, guía programática y plataforma" },
               { label: "Mensualidades", qty: "×24 meses", value: "Q2,000.00", note: null },

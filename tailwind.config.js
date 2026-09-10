@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         "special-elite": ['"Special Elite"', "cursive"],
+        serif: ["var(--font-fraunces)", "Georgia", "serif"],
       },
       colors: {
         amber: {

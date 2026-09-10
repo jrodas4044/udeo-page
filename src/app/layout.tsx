@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Jost, Montserrat } from "next/font/google";
+import { Jost, Fraunces } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Script from "next/script";
@@ -11,10 +11,12 @@ const jost = Jost({
   variable: "--font-jost",
 });
 
-const montserrat = Montserrat({
-  weight: ["400", "600", "700"],
+const fraunces = Fraunces({
+  weight: "variable",
+  style: ["normal", "italic"],
   subsets: ["latin"],
-  variable: "--font-montserrat",
+  variable: "--font-fraunces",
+  axes: ["opsz"],
 });
 
 export const metadata: Metadata = {
@@ -59,7 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${jost.variable} ${montserrat.variable} ${jost.className}`}>
+      <body className={`${jost.variable} ${fraunces.variable} ${jost.className}`}>
         {children}
 
         <Footer />
@@ -70,6 +72,12 @@ export default function RootLayout({
             src="https://salesiq.zohopublic.com/widget?wc=siqc095d68cdb0e985f9d1266e7b565969896d5611595ca0163f8e3279d4ba82e29"
             defer
           ></Script>
+          <Script
+            id="infocrim-chat-widget"
+            src="https://infocrim.turingh.solutions/chat/widget.js"
+            data-key="pk_6mUqCeTJAx3yTalyFqB3g2RmC6ZFjNRXvQB2r"
+            strategy="lazyOnload"
+          />
         </>
       </body>
     </html>

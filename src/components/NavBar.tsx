@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
               alt="Logo UDEO"
               width={130}
               height={45}
-              className="transition-all duration-300"
+              className="w-[130px] h-auto"
             />
           </Link>
 
@@ -30,7 +30,7 @@ const NavBar: React.FC = () => {
             <Link href="/about" className={linkClass}>Sobre Nosotros</Link>
             <a
               href="#contact"
-              className="bg-udeo-red hover:bg-udeo-red-dark text-white text-sm font-bold py-2 px-5 rounded-full transition-colors duration-200 shadow-sm"
+              className="bg-udeo-red hover:bg-udeo-red-dark text-white text-sm font-semibold py-2 px-5 rounded-md transition-colors"
             >
               Inscríbete
             </a>
@@ -85,7 +85,7 @@ const NavBar: React.FC = () => {
           <div className="pt-2 pb-1">
             <a
               href="#contact"
-              className="block text-center bg-udeo-red hover:bg-udeo-red-dark text-white font-bold py-3 px-4 rounded-full transition-colors text-sm"
+              className="block text-center bg-udeo-red hover:bg-udeo-red-dark text-white font-semibold py-3 px-4 rounded-md transition-colors text-sm"
               onClick={() => setIsMenuOpen(false)}
             >
               Inscríbete

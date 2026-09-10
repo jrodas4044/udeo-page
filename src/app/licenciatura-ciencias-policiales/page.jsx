@@ -68,10 +68,9 @@ export default function Page() {
 
             {/* Text */}
             <div className="lg:w-1/2">
-              <p className="text-udeo-red font-semibold text-xs uppercase tracking-widest mb-3">El programa</p>
-              <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900 leading-tight mb-6">
+              <h2 className="text-3xl md:text-4xl text-gray-900 leading-tight mb-6">
                 Protege y sirve con{" "}
-                <span className="text-udeo-red">formación de excelencia</span>
+                formación de excelencia
               </h2>
               <div className="space-y-4 text-gray-600 text-base leading-relaxed">
                 <p>
@@ -89,7 +88,7 @@ export default function Page() {
               </div>
               <a
                 href="#contact"
-                className="inline-block mt-8 bg-udeo-red hover:bg-udeo-red-dark text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="inline-block mt-8 bg-udeo-red hover:bg-udeo-red-dark text-white font-bold py-3 px-8 rounded-md hover: transition-all duration-300"
               >
                 ¡Inscríbete hoy!
               </a>
@@ -100,12 +99,12 @@ export default function Page() {
               {highlights.map((h, i) => (
                 <div
                   key={i}
-                  className="bg-gray-50 border border-gray-100 rounded-xl p-5 hover:border-udeo-red/20 hover:shadow-md transition-all duration-300"
+                  className="bg-gray-50 border border-gray-100 rounded-md p-5 hover:border-udeo-red/20 transition-all duration-300"
                 >
                   <div className="w-10 h-10 bg-udeo-red rounded-lg flex items-center justify-center text-white mb-3">
                     {h.icon}
                   </div>
-                  <h3 className="font-bold text-gray-900 text-sm mb-1">{h.title}</h3>
+                  <h3 className="text-gray-900 text-sm mb-1">{h.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{h.desc}</p>
                 </div>
               ))}
@@ -118,9 +117,8 @@ export default function Page() {
       <section className="bg-gray-50 py-14 px-4">
         <div className="container m-auto">
           <div className="text-center mb-10">
-            <p className="text-udeo-red font-semibold text-xs uppercase tracking-widest mb-2">Plan de estudios</p>
-            <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900">Pensum Académico</h2>
-            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-full" />
+            <h2 className="text-3xl md:text-4xl text-gray-900">Pensum Académico</h2>
+            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-md" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <PensumCard index={1} period="Primer Cuatrimestre" courses={[
@@ -166,21 +164,20 @@ export default function Page() {
       <section className="bg-white py-14 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <p className="text-udeo-red font-semibold text-xs uppercase tracking-widest mb-2">Nuestra comunidad</p>
-            <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900">Vida Académica</h2>
-            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-full" />
+            <h2 className="text-3xl md:text-4xl text-gray-900">Vida Académica</h2>
+            <div className="w-16 h-1 bg-udeo-red mx-auto mt-4 rounded-md" />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {photos.map((photo, i) => (
               <div
                 key={i}
-                className="group relative rounded-2xl overflow-hidden shadow-md aspect-square"
+                className="group relative rounded-md overflow-hidden shadow-md aspect-square"
               >
                 <Image
                   src={photo.src}
                   alt={photo.caption}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-500 group-"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <span className="text-white font-semibold text-sm">{photo.caption}</span>

@@ -3,32 +3,26 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-100;
+  background: #faf9f6;
+  color: #1a1a1a;
   font-family: var(--font-jost), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-montserrat), system-ui, sans-serif;
+h1, h2, h3 {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* ponytail: motion only on hero entrance; sections render static */
+@media (prefers-reduced-motion: reduce) {
+  .hero-animate, .hero-animate-right { animation: none; opacity: 1; }
 }
 
 #home-header {
   background: url("/hero.png") no-repeat center center;
   background-size: cover;
-}
-
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-.fadeInUp-animation {
-  animation: 1.5s fadeInUp;
 }
 
 @keyframes heroFadeUp {

@@ -49,14 +49,6 @@ const socialLinks = [
 export default function Footer() {
   return (
     <div>
-      {/* Diagonal top divider */}
-      <div className="h-12 bg-gray-100 relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-udeo-charcoal"
-          style={{ clipPath: "polygon(0 100%, 100% 0, 100% 100%)" }}
-        />
-      </div>
-
       <footer className="bg-udeo-charcoal text-white">
         <div className="container mx-auto px-4 md:px-8 py-14">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -83,7 +75,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
-                    className="w-9 h-9 bg-white/10 hover:bg-udeo-red rounded-lg flex items-center justify-center transition-colors duration-200"
+                    className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-md flex items-center justify-center transition-colors duration-200"
                   >
                     {s.icon}
                   </a>
@@ -93,7 +85,7 @@ export default function Footer() {
 
             {/* Col 2 — Navigation */}
             <div>
-              <h3 className="font-bold text-white text-sm uppercase tracking-widest mb-5">
+              <h3 className="font-semibold text-white text-sm mb-5">
                 Navegación
               </h3>
               <ul className="space-y-3">
@@ -101,9 +93,8 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-white/60 hover:text-udeo-gold text-sm transition-colors duration-200 flex items-center gap-2 group"
+                      className="text-white/60 hover:text-white text-sm transition-colors"
                     >
-                      <span className="w-1 h-1 bg-udeo-red rounded-full group-hover:w-2 transition-all duration-200" />
                       {link.label}
                     </Link>
                   </li>
@@ -113,7 +104,7 @@ export default function Footer() {
 
             {/* Col 3 — Programs */}
             <div>
-              <h3 className="font-bold text-white text-sm uppercase tracking-widest mb-5">
+              <h3 className="font-semibold text-white text-sm mb-5">
                 Oferta Académica
               </h3>
               <ul className="space-y-3">
@@ -121,9 +112,8 @@ export default function Footer() {
                   <li key={p.href}>
                     <Link
                       href={p.href}
-                      className="text-white/60 hover:text-udeo-gold text-sm transition-colors duration-200 flex items-center gap-2 group"
+                      className="text-white/60 hover:text-white text-sm transition-colors"
                     >
-                      <span className="w-1 h-1 bg-udeo-red rounded-full group-hover:w-2 transition-all duration-200 flex-shrink-0" />
                       {p.label}
                     </Link>
                   </li>
@@ -133,45 +123,45 @@ export default function Footer() {
 
             {/* Col 4 — Contact */}
             <div>
-              <h3 className="font-bold text-white text-sm uppercase tracking-widest mb-5">
+              <h3 className="font-semibold text-white text-sm mb-5">
                 Contacto
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-udeo-red/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-4 h-4 text-udeo-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-8 h-8 bg-white/10 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white/40 text-xs uppercase tracking-wide mb-0.5">Email</p>
-                    <a href="mailto:informacion@udeoberistain.edu.gt" className="text-white/70 hover:text-udeo-gold text-sm transition-colors duration-200 break-all">
+                    <p className="text-white/40 text-xs mb-0.5">Email</p>
+                    <a href="mailto:informacion@udeoberistain.edu.gt" className="text-white/70 hover:text-white text-sm transition-colors duration-200 break-all">
                       informacion@udeoberistain.edu.gt
                     </a>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-udeo-red/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-4 h-4 text-udeo-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-8 h-8 bg-white/10 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white/40 text-xs uppercase tracking-wide mb-0.5">PBX</p>
-                    <a href="tel:+50224584551" className="text-white/70 hover:text-udeo-gold text-sm transition-colors duration-200">
+                    <p className="text-white/40 text-xs mb-0.5">PBX</p>
+                    <a href="tel:+50224584551" className="text-white/70 hover:text-white text-sm transition-colors duration-200">
                       +(502) 2458-4551
                     </a>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-udeo-red/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-4 h-4 text-udeo-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-8 h-8 bg-white/10 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white/40 text-xs uppercase tracking-wide mb-0.5">Dirección</p>
+                    <p className="text-white/40 text-xs mb-0.5">Dirección</p>
                     <p className="text-white/70 text-sm leading-relaxed">
                       2ª Calle 31-38, Interior Colegio Montecarmelo,
                       Calzada Doroteo Guamuch Flores, Guatemala.
@@ -194,7 +184,7 @@ export default function Footer() {
                 href="https://www.jonhathanrodas.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-udeo-gold transition-colors"
+                className="hover:text-white transition-colors"
               >
                 JRL
               </a>
