@@ -22,8 +22,16 @@ const reasons = [
 
 export default function WhyStudySection() {
   return (
-    <section className="bg-udeo-charcoal text-white py-20 md:py-28">
-      <div className="container mx-auto px-4 md:px-8">
+    <section className="relative overflow-hidden bg-udeo-charcoal text-white py-20 md:py-28">
+      <Image
+        src="/escudo.png"
+        alt=""
+        aria-hidden
+        width={720}
+        height={720}
+        className="absolute -top-24 -right-8 hidden md:block w-[360px] opacity-[0.06] pointer-events-none select-none"
+      />
+      <div className="relative container mx-auto px-4 md:px-8">
         <h2 className="text-4xl md:text-5xl leading-tight mb-14 max-w-2xl">
           Por qué estudiar en UDEO Beristain
         </h2>

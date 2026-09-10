@@ -17,6 +17,14 @@ const PageHero = ({ title, subtitle }: PageHeroProps) => {
         className="object-cover opacity-30"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-udeo-charcoal via-udeo-charcoal/60 to-udeo-charcoal/30" />
+      <Image
+        src="/escudo.png"
+        alt=""
+        aria-hidden
+        width={520}
+        height={520}
+        className="absolute right-4 md:right-16 -bottom-24 w-[320px] md:w-[520px] opacity-[0.08] pointer-events-none select-none"
+      />
 
       <div className="relative z-10 container mx-auto px-4 md:px-8 pt-36 pb-16 md:pt-44 md:pb-24">
         <div className="max-w-3xl">

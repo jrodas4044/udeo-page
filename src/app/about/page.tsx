@@ -1,24 +1,7 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import PageHero from "@/components/PageHero";
 import ContactSection from "@/components/ContactSection";
-
-function useVisible(threshold = 0.15) {
-  const ref = useRef<HTMLElement>(null);
-  const [visible, setVisible] = useState(false);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) setVisible(true); },
-      { threshold }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [threshold]);
-  return { ref, visible };
-}
 
 const values = [
   {
@@ -67,10 +50,6 @@ const galleryPhotos = [
 ];
 
 export default function About() {
-  const intro = useVisible(0.15);
-  const misionVision = useVisible(0.1);
-  const valuesSection = useVisible(0.1);
-  const gallery = useVisible(0.1);
 
   return (
     <div>
@@ -81,15 +60,13 @@ export default function About() {
       />
 
       {/* ── Quiénes somos ── */}
-      <section ref={intro.ref} className="relative bg-white py-20 md:py-28 overflow-hidden">
+      <section className="relative bg-white py-20 md:py-28 overflow-hidden">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-center">
 
             {/* Text */}
             <div
-              className={`md:w-1/2 transition-all duration-700 ${
-                intro.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              }`}
+              className="md:w-1/2"
             >
               <h2 className="text-4xl md:text-5xl text-gray-900 leading-tight mb-6">
                 14 años formando a los mejores investigadores de Guatemala
@@ -116,7 +93,7 @@ export default function About() {
                   { num: "+3,000", label: "Graduados" },
                   { num: "150+", label: "Líneas de investigación" },
                 ].map((s, i) => (
-                  <div key={i} className="text-center border border-gray-100 rounded-xl p-3">
+                  <div key={i} className="text-center border border-gray-100 rounded-md p-3">
                     <p className="font-serif text-3xl text-udeo-red">{s.num}</p>
                     <p className="text-xs text-gray-500 mt-1 leading-tight">{s.label}</p>
                   </div>
@@ -126,9 +103,7 @@ export default function About() {
 
             {/* Image */}
             <div
-              className={`md:w-1/2 transition-all duration-700 delay-200 ${
-                intro.visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
-              }`}
+              className="md:w-1/2"
             >
               <div className="relative">
                 <div className="rounded-md overflow-hidden ">
@@ -147,15 +122,13 @@ export default function About() {
       </section>
 
       {/* ── Misión & Visión ── */}
-      <section ref={misionVision.ref} className="relative bg-udeo-charcoal py-20 md:py-28 overflow-hidden">
+      <section className="relative bg-udeo-charcoal py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 opacity-5 pointer-events-none"
           style={{ backgroundImage: "radial-gradient(circle, #b40001 1px, transparent 1px)", backgroundSize: "40px 40px" }}
         />
         <div className="relative z-10 container mx-auto px-4 md:px-8">
           <div
-            className={`text-center mb-14 transition-all duration-700 ${
-              misionVision.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+            className="text-center mb-14"
           >
             <h2 className="text-4xl md:text-5xl text-white leading-tight">
               Misión & Visión
@@ -177,13 +150,10 @@ export default function About() {
             ].map((item, i) => (
               <div
                 key={i}
-                className={`group bg-white/5 hover:bg-white/10 border border-white/10 rounded-md p-8 transition-all duration-500 ${
-                  misionVision.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
-                style={{ transitionDelay: `${200 + i * 150}ms` }}
+                className="group bg-white/5 hover:bg-white/10 border border-white/10 rounded-md p-8"
               >
                 <div className="flex items-center gap-4 mb-5">
-                  <div className="w-12 h-12 bg-udeo-red rounded-xl flex items-center justify-center text-xl">
+                  <div className="w-12 h-12 bg-udeo-red rounded-md flex items-center justify-center text-xl">
                     {item.icon}
                   </div>
                   <h3 className="text-white font-extrabold text-2xl">{item.label}</h3>
@@ -196,12 +166,10 @@ export default function About() {
       </section>
 
       {/* ── Valores ── */}
-      <section ref={valuesSection.ref} className="relative bg-gray-50 py-20 md:py-28 overflow-hidden">
+      <section className="relative bg-gray-50 py-20 md:py-28 overflow-hidden">
         <div className="relative z-10 container mx-auto px-4 md:px-8">
           <div
-            className={`text-center mb-14 transition-all duration-700 ${
-              valuesSection.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+            className="text-center mb-14"
           >
             <h2 className="text-4xl md:text-5xl text-gray-900 leading-tight">
               Nuestros Valores
@@ -212,12 +180,9 @@ export default function About() {
             {values.map((v, i) => (
               <div
                 key={i}
-                className={`group bg-white border border-gray-100 rounded-md p-6 hover:border-udeo-red/30 hover:shadow-lg hover:shadow-udeo-red/5 transition-all duration-300 ${
-                  valuesSection.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
-                style={{ transitionDelay: `${150 + i * 100}ms` }}
+                className="group bg-white border border-gray-100 rounded-md p-6 hover:border-udeo-red/30 hover:shadow-lg hover:shadow-udeo-red/5"
               >
-                <div className="w-12 h-12 bg-udeo-red/10 group-hover:bg-udeo-red rounded-xl flex items-center justify-center mb-4 text-udeo-red group-hover:text-white transition-all duration-300">
+                <div className="w-12 h-12 bg-udeo-red/10 rounded-md flex items-center justify-center mb-4 text-udeo-red group-hover:text-white">
                   {v.icon}
                 </div>
                 <h3 className="font-bold text-gray-900 text-base mb-2">{v.title}</h3>
@@ -229,12 +194,10 @@ export default function About() {
       </section>
 
       {/* ── Galería ── */}
-      <section ref={gallery.ref} className="relative bg-white py-20 md:py-28 overflow-hidden">
+      <section className="relative bg-white py-20 md:py-28 overflow-hidden">
         <div className="relative z-10 container mx-auto px-4 md:px-8">
           <div
-            className={`text-center mb-14 transition-all duration-700 ${
-              gallery.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+            className="text-center mb-14"
           >
             <h2 className="text-4xl md:text-5xl text-gray-900 leading-tight">
               Vida Académica
@@ -245,20 +208,15 @@ export default function About() {
             {galleryPhotos.map((photo, i) => (
               <div
                 key={i}
-                className={`group relative rounded-md overflow-hidden shadow-md aspect-square transition-all duration-500 ${
-                  gallery.visible ? "opacity-100 scale-100" : "opacity-0 scale-95"
-                }`}
-                style={{ transitionDelay: `${150 + i * 100}ms` }}
+                className="relative rounded-md overflow-hidden aspect-square"
               >
                 <Image
                   src={photo.src}
                   alt={photo.caption}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 640px) 50vw, 25vw"
+                  className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                  <span className="text-white font-semibold text-sm">{photo.caption}</span>
-                </div>
               </div>
             ))}
           </div>

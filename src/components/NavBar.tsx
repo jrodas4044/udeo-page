@@ -1,16 +1,28 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const linkClass = "text-white/90 hover:text-white transition-colors font-semibold text-sm";
 
   return (
-    <nav className="absolute top-0 right-0 left-0 z-50 bg-transparent py-4">
+    <nav
+      className={`fixed top-0 right-0 left-0 z-50 transition-colors duration-300 ${
+        scrolled || isMenuOpen ? "bg-udeo-charcoal/95 backdrop-blur py-3" : "bg-transparent py-4"
+      }`}
+    >
       <div className="mx-auto px-6 container">
         <div className="flex justify-between items-center">
           <Link href="/">
