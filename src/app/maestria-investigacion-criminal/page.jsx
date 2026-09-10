@@ -3,6 +3,12 @@ import PageHero from "@/components/PageHero";
 import PensumCard from "@/components/PensumCard";
 import ContactSection from "@/components/ContactSection";
 
+export const metadata = {
+  title: "Maestría en Investigación Criminal",
+  description:
+    "Maestría en Investigación Criminal en Guatemala. Formación avanzada para líderes en justicia, seguridad y ciencias forenses.",
+};
+
 export default function Page() {
   return (
     <div>

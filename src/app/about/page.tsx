@@ -49,6 +49,12 @@ const galleryPhotos = [
   { src: "/fotos-diplomado/4.jpg", caption: "Comunidad estudiantil" },
 ];
 
+export const metadata = {
+  title: "Sobre Nosotros",
+  description:
+    "Historia, misión y valores de la primera Facultad de Ciencias Forenses e Investigación Criminal de Guatemala. +3,000 graduados desde 2010.",
+};
+
 export default function About() {
 
   return (

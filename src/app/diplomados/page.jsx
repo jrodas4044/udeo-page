@@ -33,6 +33,12 @@ const photos = [
   { src: "/fotos-diplomado/4.jpg", caption: "Comunidad estudiantil" },
 ];
 
+export const metadata = {
+  title: "Diplomados en Ciencias Forenses",
+  description:
+    "Diplomados y educación continua en ciencias forenses e investigación criminal para profesionales en Guatemala.",
+};
+
 export default function Page() {
   return (
     <div>

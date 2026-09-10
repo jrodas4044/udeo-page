@@ -34,6 +34,12 @@ const photos = [
   { src: "/fotos-lic/4.jpg", caption: "Comunidad estudiantil" },
 ];
 
+export const metadata = {
+  title: "Licenciatura en Investigación Criminal y Seguridad",
+  description:
+    "Licenciatura en investigación criminal, criminalística y seguridad ciudadana en Guatemala. Desarrolla las habilidades para enfrentar los desafíos de la justicia.",
+};
+
 export default function Page() {
   return (
     <div>

@@ -55,6 +55,12 @@ const fasesModulo = [
   { code: "CE", name: "Conversatorio con el docente titular" },
 ];
 
+export const metadata = {
+  title: "Doctorado en Justicia Criminal y Ciencias Forenses",
+  description:
+    "Doctorado en Justicia Criminal y Ciencias Forenses en Guatemala. Propón líneas estratégicas en política criminal aplicando las ciencias forenses.",
+};
+
 export default function Page() {
   return (
     <div>

@@ -3,6 +3,12 @@ import PageHero from "@/components/PageHero";
 import PensumCard from "@/components/PensumCard";
 import ContactSection from "@/components/ContactSection";
 
+export const metadata = {
+  title: "Técnico Auditor Forense en Investigaciones Criminales",
+  description:
+    "Carrera técnica en auditoría forense e investigación criminal en Guatemala. Forma parte de la vanguardia en análisis forense con docentes activos en el campo.",
+};
+
 export default function Page() {
   return (
     <div>

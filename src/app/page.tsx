@@ -6,6 +6,10 @@ import AcademicOffersSection from "@/components/AcademicOffersSection";
 import StatsBar from "@/components/StatsBar";
 import ContactSection from "@/components/ContactSection";
 
+export const metadata = {
+  title: { absolute: "UDEO Ext. Beristain | Ciencias Forenses e Investigación Criminal en Guatemala" },
+};
+
 export default function Home() {
   return (
     <div>

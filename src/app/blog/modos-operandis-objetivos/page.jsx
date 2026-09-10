@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Modus Operandi: los 3 objetivos clave del delincuente",
+  description:
+    "Qué es el modus operandi en investigación criminal y cuáles son los tres objetivos que persigue el delincuente.",
+};
+
 const Article = () => {
   return (
     <>
