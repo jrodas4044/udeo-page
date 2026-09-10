@@ -164,8 +164,8 @@ export default function Footer() {
                   <div>
                     <p className="text-white/40 text-xs mb-0.5">Dirección</p>
                     <p className="text-white/70 text-sm leading-relaxed">
-                      2ª Calle 31-38, Interior Colegio Montecarmelo,
-                      Calzada Doroteo Guamuch Flores, Guatemala.
+                      8 Avenida &quot;C&quot; 0-51, Colonia Alvarado,
+                      Zona 2, Mixco, Guatemala.
                     </p>
                   </div>
                 </li>

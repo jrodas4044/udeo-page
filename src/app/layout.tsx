@@ -65,8 +65,9 @@ const jsonLd = {
   foundingDate: "2010",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "2ª Calle 31-38, Interior Colegio Montecarmelo, Calzada Doroteo Guamuch Flores",
-    addressLocality: "Guatemala",
+    streetAddress: "8 Avenida \"C\" 0-51, Colonia Alvarado, Zona 2",
+    addressLocality: "Mixco",
+    addressRegion: "Guatemala",
     addressCountry: "GT",
   },
   sameAs: [
