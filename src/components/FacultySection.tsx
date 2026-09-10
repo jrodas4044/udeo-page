@@ -74,9 +74,6 @@ export default function FacultySection() {
                 />
               </div>
             </div>
-            <p className="text-sm text-gray-500 mt-4">
-              Prácticas de campo y procesamiento de escena del crimen con la Policía Nacional Civil.
-            </p>
           </div>
 
         </div>
