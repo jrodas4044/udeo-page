@@ -20,19 +20,13 @@ const values = [
   },
 ];
 
-const photos = [
-  { src: "/fotos-portada/1.jpg", alt: "Estudiantes de la facultad" },
-  { src: "/fotos-portada/2.jpg", alt: "Laboratorio forense" },
-  { src: "/fotos-portada/3.jpg", alt: "Ceremonia de graduación" },
-];
-
 export default function FacultySection() {
   return (
-    <section className="bg-white py-20 md:py-28">
+    <section className="bg-white py-20 md:py-28 overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex md:flex-row flex-col gap-12 md:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-10 items-center">
 
-          <div className="md:w-1/2">
+          <div className="lg:col-span-5">
             <h2 className="text-4xl md:text-5xl text-gray-900 leading-tight mb-6">
               Una facultad hecha para investigar
             </h2>
@@ -42,10 +36,10 @@ export default function FacultySection() {
               la verdad de Guatemala.
             </p>
 
-            <dl className="space-y-5 mb-10">
+            <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 mb-10">
               {values.map((item) => (
-                <div key={item.label}>
-                  <dt className="font-semibold text-gray-900">{item.label}</dt>
+                <div key={item.label} className="border-t border-black/15 pt-4">
+                  <dt className="font-serif text-xl text-gray-900 mb-1">{item.label}</dt>
                   <dd className="text-gray-600 text-sm leading-relaxed">{item.desc}</dd>
                 </div>
               ))}
@@ -59,29 +53,30 @@ export default function FacultySection() {
             </Link>
           </div>
 
-          <div className="md:w-1/2">
-            <div className="grid grid-cols-2 gap-3 max-w-lg mx-auto">
-              <div className="row-span-2 relative rounded-md overflow-hidden">
+          <div className="lg:col-span-6 lg:col-start-7">
+            <div className="relative pb-16 pr-0 sm:pr-12">
+              <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] rounded-md overflow-hidden">
                 <Image
-                  src={photos[0].src}
-                  alt={photos[0].alt}
-                  className="w-full h-full object-cover"
-                  width={400}
-                  height={520}
+                  src="/fotos-portada/1.jpg"
+                  alt="Estudiantes de la facultad frente a sede de la Policía Nacional Civil"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
-              {photos.slice(1).map((p) => (
-                <div key={p.src} className="rounded-md overflow-hidden">
-                  <Image
-                    src={p.src}
-                    alt={p.alt}
-                    className="w-full h-44 object-cover"
-                    width={300}
-                    height={176}
-                  />
-                </div>
-              ))}
+              <div className="absolute -bottom-0 right-0 sm:-right-0 w-[55%] sm:w-[48%] aspect-[4/3] rounded-md overflow-hidden ring-8 ring-white">
+                <Image
+                  src="/fotos-portada/3.jpg"
+                  alt="Práctica de procesamiento de escena del crimen"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
+            <p className="text-sm text-gray-500 mt-4">
+              Prácticas de campo y procesamiento de escena del crimen con la Policía Nacional Civil.
+            </p>
           </div>
 
         </div>
