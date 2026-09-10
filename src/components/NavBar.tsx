@@ -9,7 +9,7 @@ const NavBar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -19,8 +19,10 @@ const NavBar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 right-0 left-0 z-50 transition-colors duration-300 ${
-        scrolled || isMenuOpen ? "bg-udeo-charcoal/95 backdrop-blur py-3" : "bg-transparent py-4"
+      className={`fixed top-0 right-0 left-0 z-50 transition-[background-color,padding,box-shadow] duration-300 ${
+        scrolled || isMenuOpen
+          ? "bg-udeo-red-dark/80 backdrop-blur-md backdrop-saturate-150 border-b border-white/10 shadow-lg shadow-black/20 py-3"
+          : "bg-transparent py-4"
       }`}
     >
       <div className="mx-auto px-6 container">
@@ -42,7 +44,11 @@ const NavBar: React.FC = () => {
             <Link href="/about" className={linkClass}>Sobre Nosotros</Link>
             <a
               href="#contact"
-              className="bg-udeo-red hover:bg-udeo-red-dark text-white text-sm font-semibold py-2 px-5 rounded-md transition-colors"
+              className={`text-sm font-semibold py-2 px-5 rounded-md transition-colors ${
+                scrolled
+                  ? "bg-white text-udeo-red hover:bg-udeo-gold-pale"
+                  : "bg-udeo-red hover:bg-udeo-red-dark text-white"
+              }`}
             >
               Inscríbete
             </a>
