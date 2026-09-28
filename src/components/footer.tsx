@@ -149,8 +149,8 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="text-white/40 text-xs mb-0.5">PBX</p>
-                    <a href="tel:+50224584551" className="text-white/70 hover:text-white text-sm transition-colors duration-200">
-                      +(502) 2458-4551
+                    <a href="tel:+50223542010" className="text-white/70 hover:text-white text-sm transition-colors duration-200">
+                      +(502) 2354-2010
                     </a>
                   </div>
                 </li>
@@ -165,7 +165,7 @@ export default function Footer() {
                     <p className="text-white/40 text-xs mb-0.5">Dirección</p>
                     <p className="text-white/70 text-sm leading-relaxed">
                       8 Avenida &quot;C&quot; 0-51, Colonia Alvarado,
-                      Zona 2, Mixco, Guatemala.
+                      Zona 2 Mixco, Guatemala.
                     </p>
                   </div>
                 </li>

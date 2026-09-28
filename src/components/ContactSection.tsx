@@ -16,7 +16,7 @@ export default function ContactSection() {
             <dl className="text-sm space-y-3 text-gray-700">
               <div>
                 <dt className="text-gray-500">Teléfono</dt>
-                <dd><a href="tel:+50224584551" className="hover:text-udeo-red">+(502) 2458-4551</a></dd>
+                <dd><a href="tel:+50223542010" className="hover:text-udeo-red">+(502) 2354-2010</a></dd>
               </div>
               <div>
                 <dt className="text-gray-500">Correo</dt>

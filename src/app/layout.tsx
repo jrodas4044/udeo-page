@@ -61,7 +61,7 @@ const jsonLd = {
   url: "https://udeoberistain.edu.gt",
   logo: "https://udeoberistain.edu.gt/logo.png",
   email: "informacion@udeoberistain.edu.gt",
-  telephone: "+502 2458-4551",
+  telephone: "+502 2354-2010",
   foundingDate: "2010",
   address: {
     "@type": "PostalAddress",
